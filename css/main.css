@@ -38,11 +38,12 @@ h1,h2,h3,h4,h5,h6,p {
     margin:0;
 }
 
+/* Style för första sidan */
 .page1 {
-    border: solid 1px;
     height: 552px;
     display: grid;
     grid-template-rows: 52px 1fr;
+    background: linear-gradient(180deg,#FFFFFF 0%, #F1F4FD 100%);
 
 
     .nav-bar {
@@ -51,7 +52,7 @@ h1,h2,h3,h4,h5,h6,p {
         align-items: center;
         gap: 2px;
         grid-template-columns: auto 1fr auto auto;
-        background-color: #FFFFFF;
+
         .nav-item {
             height: 50px;
             width: 50px;
@@ -64,12 +65,13 @@ h1,h2,h3,h4,h5,h6,p {
             font-weight: 800;
         }
     }
-
+/* Mittensektion */
     .hero {
-        background-color: #FFFFFF;  
         display: grid;
         justify-items: center;
-        align-items: center;
+        align-items: flex-start;
+        grid-template-rows: auto auto auto 1fr;
+        gap: 16px;
         .hero-item {
             display: grid;
             justify-content: center;
@@ -81,16 +83,19 @@ h1,h2,h3,h4,h5,h6,p {
             h1 {
                 width: 298px;
                 height: 90px;
+                font-weight: 800;
+                color: #131022;
             }
-
             p {
                 display: grid;
                 align-items: center;
                 width: 361px;
                 height: 115px;
-                
+                font-size: 1.1em;
+                color: #585C7B;
             }
         }
+        /* style för knapparna */
         #hero-item-btn {
             height: 50px;
             width: 366px;
