@@ -40,27 +40,24 @@ h1,h2,h3,h4,h5,h6,p {
 
 /* Style för första sidan */
 .page1 {
-    height: 552px;
+    height: 558px;
     display: grid;
-    grid-template-rows: 52px 1fr;
+    grid-template-rows: 60px 1fr;
     background: linear-gradient(180deg,#FFFFFF 0%, #F1F4FD 100%);
 
-
     .nav-bar {
-        xborder: solid 1px black;
         display: grid;
+        padding: 7px 4px 0px 4px;
         align-items: center;
-        gap: 2px;
         grid-template-columns: auto 1fr auto auto;
-
         .nav-item {
-            height: 50px;
-            width: 50px;
+            width: 60px;
             display: grid;
             align-items: center;
             justify-items: center;     
         }
         #header-text {
+            justify-items: start;
             font-size: 1.3em;
             font-weight: 800;
         }
@@ -79,7 +76,6 @@ h1,h2,h3,h4,h5,h6,p {
             text-align: center;
             height: 115px;
             width: 361px;
-            xborder: solid 1px;
             h1 {
                 width: 298px;
                 height: 90px;
