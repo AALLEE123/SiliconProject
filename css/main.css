@@ -105,15 +105,65 @@ h1,h2,h3,h4,h5,h6,p {
     }
 
 }   
+/* Style för App Features sidan */
+.page2 {
+    height: 1101px;
+    background: #ffffff;
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    gap: 24px;
+    grid-template-rows: auto auto 1fr;
+    h2 {
+        margin-top: 45px;
+        color: #131022;
+        font-weight: 800;
+        font-size: 27.9px;
+    }
+    p {
+        color: #585C7B;
+    }
+    #f-text {
+        font-size: 1.1em;
+        line-height: 28.8px;
+        text-align: center;
+        width: 360px;
+    }
+    .features {
+        margin-top: 10px;
+        display: grid;
+        width: 360px;
+        gap: 34px;
+        .features-item {
+            display: grid;
+            gap: 12px;
+            grid-template-areas: "fii fih"
+                                 "fii fit";
+            #fi-head {grid-area: fih; color: #131022; line-height: 28px; font-size: 20px; font-weight: 800;}
+            #fi-text {grid-area: fit; line-height: 25.6px;}
+            #fi-icon {grid-area: fii;}
+            .features-icon {
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                background-color: #F3F6FF;
+                border-radius: 10px;
+                height: 60px;
+                width: 60px;
+                margin-right: 8px;
+            }
+        }
+    }
+
+}
 
 .page3 {
     height: 552px;
     display: grid;
     grid-template-rows: 52px 1fr;
-    background: linear-gradient(180deg,#FFFFFF 0%, #F1F4FD 100%);    
-}
-
-.hero-item2 {
+    background: linear-gradient(180deg,#FFFFFF 0%, #F1F4FD 100%); 
+    
+    .hero-item2 {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -121,20 +171,22 @@ h1,h2,h3,h4,h5,h6,p {
     xheight: 115px;
     xwidth: 361px;
     border: solid 1px;
+    }
+    h1 {
+        text-align: center;
+        color: #131022;
+    }
+    h2 {
+        text-align: center;
+        color: #131022;
+        width: 366px;
+        height: 64px;
+    }
+    p {
+        text-align: center;
+        color: #585C7B;
+        width: 360px;
+        height: 77px;
+    }
 }
-h1 {
-    text-align: center;
-    color: #131022;
-}
-h2 {
-    text-align: center;
-    color: #131022;
-    width: 366px;
-    height: 64px;
-}
-p {
-    text-align: center;
-    color: #585C7B;
-    width: 360px;
-    height: 77px;
-}
+
