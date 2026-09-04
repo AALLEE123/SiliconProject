@@ -105,3 +105,36 @@ h1,h2,h3,h4,h5,h6,p {
     }
 
 }   
+
+.page3 {
+    height: 552px;
+    display: grid;
+    grid-template-rows: 52px 1fr;
+    background: linear-gradient(180deg,#FFFFFF 0%, #F1F4FD 100%);    
+}
+
+.hero-item2 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    xheight: 115px;
+    xwidth: 361px;
+    border: solid 1px;
+}
+h1 {
+    text-align: center;
+    color: #131022;
+}
+h2 {
+    text-align: center;
+    color: #131022;
+    width: 366px;
+    height: 64px;
+}
+p {
+    text-align: center;
+    color: #585C7B;
+    width: 360px;
+    height: 77px;
+}
