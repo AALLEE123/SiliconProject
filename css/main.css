@@ -114,11 +114,43 @@ h1,h2,h3,h4,h5,h6,p {
     align-items: start;
     gap: 24px;
     grid-template-rows: auto auto 1fr;
+    @media (width >= 712px) {
+        grid-template-rows: auto auto auto 1fr;
+        height: 917px;
+    }
+    .logos {
+        display: none;
+        @media (width >= 712px) {
+            margin-top: 48px;
+            display: grid;
+            gap: 24px;
+            width: 704px;
+            grid-template-areas: "logo1 logo2 logo3 logo4";
+        }
+        #logo1 {grid-area: logo1;}
+        #logo2 {grid-area: logo2;}
+        #logo3 {grid-area: logo3;}
+        #logo4 {grid-area: logo4;}
+        #logo5 {grid-area: logo5; display: none;}
+        #logo6 {grid-area: logo6; display: none;}
+        .logo-item {         
+            width: 158px;
+            height: 99px;
+            border: solid 1px #e2e5f1;
+            border-radius: 7px;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+    }
     h2 {
         margin-top: 32px;
         color: #131022;
         font-weight: 800;
         font-size: 27.9px;
+        @media (width >= 712px) {
+            font-size: 35.5px;
+        }
     }
     p {
         color: #585C7B;
@@ -128,12 +160,29 @@ h1,h2,h3,h4,h5,h6,p {
         line-height: 28.8px;
         text-align: center;
         width: 360px;
+        @media (width >= 712px) {
+            width: 690px;
+        }
     }
     .features {
         margin-top: 10px;
         display: grid;
         width: 360px;
         gap: 34px;
+        @media (width >= 712px) {
+            margin-left: 8px;
+            width: 706px;
+            #fi-paym {grid-area: fi-paym;}
+            #fi-secu {grid-area: fi-secu;}
+            #fi-stat {grid-area: fi-stat;}
+            #fi-supp {grid-area: fi-supp;}
+            #fi-cash {grid-area: fi-cash;}
+            #fi-stan {grid-area: fi-stan;}
+            grid-template-areas: 
+            "fi-paym fi-secu"
+            "fi-stat fi-supp"
+            "fi-cash fi-stan";  
+        }
         .features-item {
             display: grid;
             gap: 12px;
