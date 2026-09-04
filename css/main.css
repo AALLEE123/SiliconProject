@@ -44,7 +44,7 @@ h1,h2,h3,h4,h5,h6,p {
     display: grid;
     grid-template-rows: 60px 1fr;
     background: linear-gradient(180deg,#FFFFFF 0%, #F1F4FD 100%);
-
+    /* Header/Navbar */
     .nav-bar {
         display: grid;
         padding: 7px 4px 0px 4px;
@@ -62,13 +62,14 @@ h1,h2,h3,h4,h5,h6,p {
             font-weight: 800;
         }
     }
-/* Mittensektion */
+    /* Mittensektion */
     .hero {
         display: grid;
         justify-items: center;
-        align-items: flex-start;
+        align-items: start;
         grid-template-rows: auto auto auto 1fr;
         gap: 16px;
+        margin-top: 20px;
         .hero-item {
             display: grid;
             justify-content: center;
@@ -81,6 +82,7 @@ h1,h2,h3,h4,h5,h6,p {
                 height: 90px;
                 font-weight: 800;
                 color: #131022;
+                line-height: 44.4px;
             }
             p {
                 display: grid;
@@ -88,6 +90,8 @@ h1,h2,h3,h4,h5,h6,p {
                 width: 361px;
                 height: 115px;
                 font-size: 1.1em;
+                line-height: 28.8px;
+                margin-top: -15px;
                 color: #585C7B;
             }
         }
@@ -111,7 +115,7 @@ h1,h2,h3,h4,h5,h6,p {
     gap: 24px;
     grid-template-rows: auto auto 1fr;
     h2 {
-        margin-top: 45px;
+        margin-top: 32px;
         color: #131022;
         font-weight: 800;
         font-size: 27.9px;
