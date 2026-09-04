@@ -108,13 +108,15 @@ h1,h2,h3,h4,h5,h6,p {
 /* Style för App Features sidan */
 .page2 {
     height: 1101px;
+    background: #ffffff;
     display: grid;
     justify-items: center;
     align-items: start;
     gap: 24px;
-    margin-top: 45px;
+    
     grid-template-rows: auto auto 1fr;
     h2 {
+        margin-top: 45px;
         color: #131022;
         font-weight: 800;
         font-size: 27.9px;
