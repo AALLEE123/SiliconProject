@@ -5,3 +5,6 @@ Uppdelning:
         How Does It Work: Alexander
         FAQ: Daniel
         Contact+Subscribe+Footer: William
+
+Mobil: 360px
+Tablet: 712px
