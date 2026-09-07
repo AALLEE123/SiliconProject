@@ -158,10 +158,14 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .page3 {
-    height: 552px;
+    height: 115px;
+    background: #ffffff;
     display: grid;
-    grid-template-rows: 52px 1fr;
-    background: linear-gradient(180deg,#FFFFFF 0%, #F1F4FD 100%); 
+    justify-items: center;
+    align-items: start;
+    gap: 24px;
+    grid-template-rows: auto auto 1fr;
+    xborder: solid 1px;
     
     .hero-item2 {
     display: grid;
@@ -170,17 +174,20 @@ h1,h2,h3,h4,h5,h6,p {
     text-align: center;
     xheight: 115px;
     xwidth: 361px;
-    border: solid 1px;
+    xborder: solid 1px;
     }
     h1 {
         text-align: center;
         color: #131022;
+        border: solid 1px;
+        font-size: 27.9px;
     }
     h2 {
         text-align: center;
         color: #131022;
-        width: 366px;
-        height: 64px;
+        width: 337px;
+        height: 60px;
+        border: solid 1px;
     }
     p {
         text-align: center;
