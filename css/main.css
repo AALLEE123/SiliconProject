@@ -33,11 +33,35 @@ a {
     }
 }
 
-h1,h2,h3,h4,h5,h6,p {
+h1,h2,h3,h4,h5,h6 {
     padding:0;
     margin:0;
+    line-height: 130%;
+    font-weight: 800;
+    color: #131022
 }
+h1{font-size: 2.5rem;}
+h2{font-size: 2rem;}
+h3{font-size: 1.75rem;}
+h4{font-size: 1.5rem;}
+h5{font-size: 1.25rem;}
+h6{font-size: 1rem;}
 
+p {
+    padding:0;
+    margin:0;
+    line-height: 160%;
+    color: #585C7B;
+}
+p.L_text {font-size: 1.125rem;}
+p.M_text {font-size: 1rem;}
+
+.grid_12 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, minmax(0,1fr));
+    column-gap: 1.5rem;
+}
 /* Style för första sidan */
 .page1 {
     height: 558px;
@@ -105,160 +129,107 @@ h1,h2,h3,h4,h5,h6,p {
     }
 
 }   
-/* Style för App Features sidan */
+
 .page2 {
-    height: 1101px;
     background: #ffffff;
     display: grid;
-    justify-items: center;
-    align-items: start;
-    @media (width >= 712px) {
-        grid-template-rows: auto 1fr;
-        gap: 24px;
-        height: 917px;
-    }
-    @media (width >= 1344px) {
-        #af-phone{grid-area: afp;}
-        #af-content {grid-area: afc;} 
-        #af-logos{grid-area: afl;}
-        grid-template-areas: 
-        "afl afl"
-        "afp afc";  
-        row-gap: 112px; 
-        column-gap: 156px;
-        height: 1104px;
+    justify-content: center;
 
-    }
     .logos {
         display: none;
-        #logo1 {grid-area: logo1;}
-        #logo2 {grid-area: logo2;}
-        #logo3 {grid-area: logo3;}
-        #logo4 {grid-area: logo4;}
-        #logo5 {grid-area: logo5; display: none;}
-        #logo6 {grid-area: logo6; display: none;}
         @media (width >= 712px) {
-            margin-top: 48px;
+            margin-top: 3rem;
             display: grid;
-            gap: 24px;
-            grid-template-areas: "logo1 logo2 logo3 logo4";
-        }
+            grid-column: 1 / -1;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            #logo5 {display: none;}
+            #logo6 {display: none;}
+        }    
         @media (width >= 1344px) {
+            margin: 6rem 0rem 3rem;
+            grid-template-columns: repeat(6, 1fr);
             #logo5 {display: grid;}
-            #logo6 {display: grid;}  
-            grid-template-areas: "logo1 logo2 logo3 logo4 logo5 logo6"; 
-            margin-top: 96px;
+            #logo6 {display: grid;}   
         }
-        .logo-item {         
-            width: 158px;
-            height: 100px;
+
+        .logo_item {
+            height: 6.25rem;
             border: solid 1px #e2e5f1;
-            border-radius: 7px;
+            border-radius: .5rem;
             display: grid;
-            justify-items: center;
-            align-items: center;
-            @media (width >= 1344px) {
-                width: 196px;
-            }
-        }
+            place-content: center;
+        }    
     }
-    .features-phone {
-        display: none;
-        @media (width >= 1344px) {
-            display: inline;
-        }
-    }
-    .app-features {
-        display: grid;
-        align-items: start;
-        justify-items: center;
-        grid-template-rows: auto auto 1fr;
-        gap: 20px;
+
+    .app_features {
+        margin: 3rem 0rem;
+        width: 21.75rem;
+        row-gap: 2rem;
         @media (width >= 712px) {
-            gap: 34px;
+            width: 43.5rem;
+            margin: 4rem 0rem;
+            row-gap: 2.5rem;
         }
         @media (width >= 1344px) {
-            width: 746px;
-            justify-items: start;
+            width: 81rem;  
+            row-gap: 2.5rem; 
+            h2 {font-size: 2.5rem;} 
+            p.L_text {color: #9397ad; margin-top: -5rem;}
         }
-        h2 {
-            margin-top: 34px;
-            color: #131022;
-            font-weight: 800;
-            font-size: 27.9px;
-            @media (width >= 712px) {
-                font-size: 35.5px;
-                margin-bottom: -10px;
-            }
+
+        .app_features_phone {
+            display: none;
             @media (width >= 1344px) {
-                margin-top: 0px;
-                margin-bottom: -24px;
+                display: block;
+                grid-column: 1 / 5;
+                grid-row: 1 / 4;
             }
+            
         }
-        p {
-            color: #585C7B;
-        }
-        #f-text {
-            font-size: 18px;
-            line-height: 28.8px;
+
+        h2, p.L_text {
+            grid-column: 1 / -1;
             text-align: center;
-            width: 366px;
-            @media (width >= 712px) {
-                width: 704px;
-            }
             @media (width >= 1344px) {
-                width: 746px;
-                text-align: start;
-                margin-bottom: 12px;
-                color: #9397ad;
+                grid-column: 6 / 13;
+                text-align: start;     
             }
-        }               
+        }
+
         .features {
-            margin-top: 10px;
+            grid-column: 1 / -1;
             display: grid;
-            width: 360px;
-            gap: 32px;
+            gap: 2rem;
             @media (width >= 712px) {
-                margin-left: 8px;
-                width: 706px;
-                #fi-paym {grid-area: fi-paym;}
-                #fi-secu {grid-area: fi-secu;}
-                #fi-stat {grid-area: fi-stat;}
-                #fi-supp {grid-area: fi-supp;}
-                #fi-cash {grid-area: fi-cash;}
-                #fi-stan {grid-area: fi-stan;}
-                grid-template-areas: 
-                "fi-paym fi-secu"
-                "fi-stat fi-supp"
-                "fi-cash fi-stan";  
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto auto auto;    
+                gap: 2.5rem;
             }
             @media (width >= 1344px) {
-                margin-left: 0px;   
-                width: 746px;
-                column-gap: 56px; 
-                row-gap: 48px;
+                grid-column: 6 / 13;
+                column-gap: 4.5rem;
+                margin-top: -3rem;
+                margin-bottom: 1rem;
             }
-            .features-item {
-                xborder: solid;
+
+            .features_item {
                 display: grid;
-                row-gap: 12px;
-                grid-template-areas: "fii fih"
-                                    "fii fit";
-                #fi-head {grid-area: fih; color: #131022; line-height: 140%; font-size: 20px; font-weight: 800;}
-                #fi-text {grid-area: fit; line-height: 160%;}
-                #fi-icon {grid-area: fii;}
-                .features-icon {
+                grid-template-columns: auto 1fr;
+                gap: 1rem;
+            
+                .features_item_text {
                     display: grid;
-                    align-items: center;
-                    justify-items: center;
+                    grid-template-rows: auto 1fr;
+                    gap: .5rem;
+                }
+                .features_item_icon {
+                    height: 3.75rem;
+                    width: 3.75rem;
                     background-color: #F3F6FF;
-                    border-radius: 10px;
-                    height: 60px;
-                    width: 60px;
-                    margin-right: 20px;
-                    @media (width >= 712px) {
-                        margin-right: 24px;
-                    }
+                    border-radius: .5rem;
+                    display: grid;
+                    place-content: center;
                 }
             }
         }
@@ -268,4 +239,6 @@ h1,h2,h3,h4,h5,h6,p {
 @media (width >= 1344px) {
                 
             }
-
+ @media (width >= 712px) {
+           
+        }
