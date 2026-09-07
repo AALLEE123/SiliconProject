@@ -6,5 +6,7 @@ Uppdelning:
         FAQ: Daniel
         Contact+Subscribe+Footer: William
 
-Mobil: 360px
-Tablet: 712px
+Minsta Storlek:
+Mobil: 360px (>=4px padding - 352px content) ?
+Tablet: 712px (>=8px padding - 696px content) ?
+Desktop: 1344px (>=24px padding - 1296px content) ?
