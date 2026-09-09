@@ -63,12 +63,13 @@ p.M_text {font-size: 1rem;}
     column-gap: 1.5rem;
 }
 /* Style för första sidan */
+/* 
 .page1 {
     height: 558px;
     display: grid;
     grid-template-rows: 60px 1fr;
     background: linear-gradient(180deg,#FFFFFF 0%, #F1F4FD 100%);
-    /* Header/Navbar */
+
     .nav-bar {
         display: grid;
         padding: 7px 4px 0px 4px;
@@ -86,7 +87,7 @@ p.M_text {font-size: 1rem;}
             font-weight: 800;
         }
     }
-    /* Mittensektion */
+    
     .hero {
         display: grid;
         justify-items: center;
@@ -119,7 +120,7 @@ p.M_text {font-size: 1rem;}
                 color: #585C7B;
             }
         }
-        /* style för knapparna */
+        
         #hero-item-btn {
             height: 50px;
             width: 366px;
@@ -128,7 +129,76 @@ p.M_text {font-size: 1rem;}
         }
     }
 
-}   
+}
+*/
+
+.pagex {
+    background: linear-gradient(180deg,#FFFFFF 0%, #F1F4FD 100%);
+    header {
+        padding: .375rem;
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        align-items: center;
+        gap: 1.5rem;
+        margin-right: .75rem;
+
+        .header_item {
+            display: grid;
+            align-items: center;
+        }
+
+        .header_logo {
+            grid-template-columns: auto 1fr;
+            gap: .375rem;
+        }
+
+        .darkmode {
+            
+        }
+        
+        .nav {
+            
+        }
+
+    }
+    .wrapper {
+        display: grid;
+        justify-content: center;
+        .hero{
+            min-width: 21.75rem;
+            max-width: 22.5rem;
+            margin: 1rem .375rem 6rem ;
+            row-gap: 1rem;
+            .hero_item {
+                grid-column: 1/13;
+                display: grid;
+                place-content: center;
+                text-align: center;
+            }
+
+            .headline {
+                margin: 1rem -.125rem;
+            }
+
+            p.L_text {
+                margin-bottom: 1.5rem;
+            }
+           
+            .download_btn {
+                display: grid;
+                place-content: center;
+                height: 3rem;
+                background-color: #131022;
+                border-radius: .5rem;
+            }
+            
+        }
+
+
+
+    }
+
+}
 
 .page2 {
     background: #ffffff;
