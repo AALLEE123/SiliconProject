@@ -307,24 +307,26 @@ h1,h2,h3,h4,h5,h6,p {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 712px) {
 
-    .page5 .box {
+    .page5{ 
+
+     .box {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        max-width: 705.6px;
         min-height: 223.1px;
         gap: 29px;             
     }
 
-    .page5 .news-header {
+     .news-header {
         flex-shrink: 0;        
 
-    .page5 .email-box {
+     .email-box {
         margin: 0;             
     }
 
 }
 
+}
 }
