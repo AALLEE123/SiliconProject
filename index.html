@@ -5,28 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="/css/main.css">
-    <script src="/js/main.js" defer></script>
+    <script src="/js/menu.js"></script>
     <title> -Silicon-Grupp-8</title>
 </head>
 <body>
-    <!-- Sida 1 -->
-    <!-- <div class="page1">
-        <header class="nav-bar">
-            <div class="nav-item"><img src="images/siliconicon.svg" alt="Silicon Logo" width="47" height="44"> </div>
-            <div class="nav-item" id="header-text">Silicon</div>
-            <div class="nav-item"><img src="images/darkmode.svg" alt="Darkmode" width="46" height="24"> </div>
-            <div class="nav-item"><img src="images/burgermenu.svg" alt="Silicon Logo" width="30" height="36"></div>
-        </header> -->
-        <!-- Mittendelen -->
-        <!-- <main class="hero">
-            <div class="hero-item"><h1>Manage All Your Money in One App</h1></div>
-            <div class="hero-item"><p>We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p></div>
-            <div class="hero-item" id="hero-item-btn"><img src="images/appstore-light.svg.svg"></div>
-            <div class="hero-item" id="hero-item-btn"><img src="images/googleplay-light.svg fill.svg"></div>
-        </main>
-    </div> --> 
-    <!-- Sida 2 -->
-    <div class="pagex">
+    <div class="page1">
         <header>
             <div class="header_logo header_item">
                 <img src="images/siliconicon.svg" alt="Silicon Logo">
@@ -38,7 +21,17 @@
             </div>
 
             <nav class="nav header_item">
-                <img src="images/burgermenu.svg" alt="Silicon Logo">
+                <div class="menu">
+                    <div class="select_box">
+                        <img src="images/burgermenu.svg" alt="Silicon Logo">
+                    </div>
+                    <div class="options">
+                        <a class="option" href="#App_Features">App Features</a>
+                        <a class="option" href="#">How Does It Work?</a>
+                        <a class="option" href="#">FAQ</a>
+                        <a class="option" href="#">Contact Us</a>
+                    </div>
+                </div>
             </nav>
         </header>
 
@@ -46,17 +39,14 @@
             <main class="hero grid_12">
                 <h1 class="headline hero_item">Manage All Your Money in One App</h1>
                 <p class="L_text hero_item">We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
-                <div class="download_btn hero_item"><img src="images/appstore-light.svg.svg"></div>
-                <div class="download_btn hero_item"><img src="images/googleplay-light.svg fill.svg"></div>
-  
+                <a class="download_btn hero_item" href="https://www.apple.com/se/app-store/" target="_blank"><img src="images/appstore-light.svg.svg"></a>
+                <a class="download_btn hero_item" href="https://play.google.com/" target="_blank"><img src="images/googleplay-light.svg fill.svg"></a>
             </main>
         </div>
-
-
     </div>
 
-
-    <div class="page2">
+    
+    <div class="page2" id="App_Features">
         <section class="logos grid_12">
             <div class="logo_item" id="logo1"><img src="images/logoipsum1.svg" alt="logoipsum1"></div>
             <div class="logo_item" id="logo2"><img src="images/logoipsum2.svg" alt="logoipsum2"></div>
