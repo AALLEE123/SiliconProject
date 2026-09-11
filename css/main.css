@@ -303,3 +303,90 @@ p.M_text {font-size: 1rem;}
  @media (width >= 712px) {
            
         }
+
+.faqSection {
+    display: grid;
+    justify-items: stretch;
+    align-items: start;
+    gap: 1.5rem;
+    grid-template-rows: auto auto 1fr;
+    padding: 1rem;
+    border: 1px solid #E8EAEF;
+    border-radius: 12px; 
+    background: #FFFFFF;
+    
+    h1 {
+        margin: 1.5rem 0 0.5rem 0;
+        color: #131022;
+        font-weight: 800;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    
+    p {
+        color: #585C7B;
+        margin: 0 0 1.5rem 0;
+        text-align: center;
+        font-weight: 400;
+    }
+}
+
+details summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* * viktigt: toppa-align, inte center */
+    gap: 1rem;
+}
+
+.faqQuestion {
+    font-weight: 600;
+    color: #131022;
+    flex: 1; /* * gör att frågan tar plats och skjuter svgs åt höger */
+    padding-top: 0.25rem;
+}
+
+details summary::after {
+    content: '';
+    width: 2.5em;
+    height: 2.5em;
+    min-width: 2.5em;
+    min-height: 2.5em;
+    background: url('/images/FAQ/whiteArrow.svg') no-repeat center;
+    background-size: contain;
+    border-radius: 50%;
+    flex-shrink: 0; /* * stänger av flex på pil-knapparna */
+}
+
+details[open] summary::after {
+    background: url('/images/FAQ/blueArrow.svg') no-repeat center;
+    background-size: contain;
+}
+
+.faqItem {
+    padding: 1.25rem;
+    border: 1px solid #E8EAEF;
+    border-radius: 8px 8px 0px 0px;
+    background: #FFFFFF;
+    margin-bottom: 0;
+    
+}
+
+.faqAnswer {
+    display: block;
+    margin-top: 1rem;
+    line-height: 1.6;
+    color: #6B7280;
+}
+
+.contactLink {
+    display: flex;
+    justify-content: center;
+    background-color: #6366F1;
+    color: #FFFFFF;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    align-items: center;
+}
