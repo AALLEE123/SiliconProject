@@ -5,95 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="/css/main.css">
-    <script src="/js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/aef312987b.js" crossorigin="anonymous"></script>
+    <script src="/js/menu.js"></script>
     <title> -Silicon-Grupp-8</title>
 </head>
 <body>
-    <!-- Sida 1 -->
     <div class="page1">
-        <header class="nav-bar">
-            <div class="nav-item"><img src="images/siliconicon.svg" alt="Silicon Logo" width="47" height="44"> </div>
-            <div class="nav-item" id="header-text">Silicon</div>
-            <div class="nav-item"><img src="images/darkmode.svg" alt="Darkmode" width="46" height="24"> </div>
-            <div class="nav-item"><img src="images/burgermenu.svg" alt="Silicon Logo" width="30" height="36"></div>
+        <header>
+            <div class="header_logo header_item">
+                <img src="images/siliconicon.svg" alt="Silicon Logo">
+                <h5>Silicon</h5>
+            </div>
+
+            <div class="darkmode header_item">
+                <img src="images/darkmode.svg" alt="Darkmode">
+            </div>
+
+            <nav class="nav header_item">
+                <div class="menu">
+                    <div class="select_box">
+                        <i class="fa-solid fa-bars" id="burger"></i>
+                    </div>
+                    <div class="options">
+                        <a class="option" href="#App_Features">App Features</a>
+                        <a class="option" href="#">How Does It Work?</a>
+                        <a class="option" href="#">FAQ</a>
+                        <a class="option" href="#">Contact Us</a>
+                        <a class="option" href="#">Log in / Sign Up</a>
+                    </div>
+                </div>
+            </nav>
         </header>
-        <!-- Mittendelen -->
-        <main class="hero">
-            <div class="hero-item"><h1>Manage All Your Money in One App</h1></div>
-            <div class="hero-item"><p>We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p></div>
-            <div class="hero-item" id="hero-item-btn"><img src="images/appstore-light.svg.svg"></div>
-            <div class="hero-item" id="hero-item-btn"><img src="images/googleplay-light.svg fill.svg"></div>
-        </main>
-    </div>
-    <!-- Sida 2 -->
-    <div class="page2">
-        <h2>App Features</h2>
-        <p id="f-text">Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Proin volutpat mollis egestas.
-        Nam luctus facilisis ultrices. Pellentesque
-        volutpat ligula est. Mattis fermentum, at nec
-        lacus.</p>
-        <div class="features">
-            <div class="features-item">
-                <h3 id="fi-head">Easy Payments</h3>
-                <p id="fi-text">Id mollis consectetur congue egestas
-                egestas suspendisse blandit justo.</p>
-                <div class="features-icon" id="fi-icon">
-                    <img src="images/features-payments-icon.svg" alt="payments-icon">
-                </div>
-            </div>
-            <div class="features-item">
-                <h3 id="fi-head">Data Security</h3>
-                <p id="fi-text">Augue pulvinar justo, fermentum
-                fames aliquam accumsan vestibulum
-                non.</p>
-                <div class="features-icon" id="fi-icon">
-                    <img src="images/features-security-icon.svg" alt="security-icon">
-                </div>
-            </div>
-            <div class="features-item">
-                <h3 id="fi-head">Cost Statistics</h3>
-                <p id="fi-text">Mattis urna ultricies non amet, purus
-                in auctor non. Odio vulputate ac nibh.</p>
-                <div class="features-icon" id="fi-icon">
-                    <img src="images/features-statistics-icon.svg" alt="statistics-icon">
-                </div>
-            </div>
-            <div class="features-item">
-                <h3 id="fi-head">Support 24/7</h3>
-                <p id="fi-text">A elementum, imperdiet enim, pretium
-                etiam facilisi in aenean quam mauris.</p>
-                <div class="features-icon" id="fi-icon">
-                    <img src="images/features-support-icon.svg" alt="support-icon">
-                </div>
-            </div>
-            <div class="features-item">
-                <h3 id="fi-head">Regular Cashback</h3>
-                <p id="fi-text">Sit facilisis dolor arcu, fermentum
-                vestibulum arcu elementum imperdiet
-                eleifend.</p>
-                <div class="features-icon" id="fi-icon">
-                    <img src="images/features-cashback-icon.svg" alt="cashback-icon">
-                </div>
-            </div>
-            <div class="features-item">
-                <h3 id="fi-head">Top Standards</h3>
-                <p id="fi-text">Faucibus cursus maecenas lorem
-                cursus nibh. Sociis sit risus id. Sit
-                facilisis dolor arcu.</p>
-                <div class="features-icon" id="fi-icon">
-                    <img src="images/features-happy-icon.svg" alt="happy-icon">
-                </div>
-            </div>
+
+        <div class="wrapper">
+            <main class="hero grid_12">
+                <h1 class="headline hero_item">Manage All Your Money in One App</h1>
+                <p class="L_text hero_item">We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
+                <a class="download_btn hero_item" href="https://www.apple.com/se/app-store/" target="_blank"><img src="images/appstore-light.svg.svg"></a>
+                <a class="download_btn hero_item" href="https://play.google.com/" target="_blank"><img src="images/googleplay-light.svg fill.svg"></a>
+            </main>
         </div>
     </div>
+   
+    <div class="page2" id="App_Features">
+        <section class="logos grid_12">
+            <div class="logo_item" id="logo1"><img src="images/logoipsum1.svg" alt="logoipsum1"></div>
+            <div class="logo_item" id="logo2"><img src="images/logoipsum2.svg" alt="logoipsum2"></div>
+            <div class="logo_item" id="logo3"><img src="images/logoipsum3.svg" alt="logoipsum3"></div>
+            <div class="logo_item" id="logo4"><img src="images/logoipsum4.svg" alt="logoipsum4"></div>
+            <div class="logo_item" id="logo5"><img src="images/logoipsum5.svg" alt="logoipsum5"></div>
+            <div class="logo_item" id="logo6"><img src="images/logoipsum6.svg" alt="logoipsum6"></div>
+        </section>
 
-    <!-- Sida 3 -->
-     <div class="page3">
-        <h1>How Does It Work?</h1>
-        <img class="hero-item2" src="images/phone.svg" alt="Phone" width="270" height="545">
-        <h2>Transfers to people fromyour contact list</h2>
-        <p>Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
-     </div>
+        <section class="app_features grid_12">
+            <div class="app_features_phone">
+                <img src="images/appfeatures-complete-phone.svg" alt="Phone and credit card">
+            </div>
+
+            <h2>App Features</h2>
+            
+            <p class="L_text">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Proin volutpat mollis egestas.
+            Nam luctus facilisis ultrices. Pellentesque
+            volutpat ligula est. Mattis fermentum, at nec
+            lacus.</p>
+
+            <div class="features">
+                <div class="features_item">
+                    <div class="features_item_icon">
+                        <img src="images/features-payments-icon.svg" alt="payment icon" id="fi-icon">
+                    </div>
+                    <div class="features_item_text">
+                        <h5>Easy Payments</h5>
+                        <p class="M_text">Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
+                    </div>
+                </div>
+
+                <div class="features_item">                    
+                    <div class="features_item_icon">
+                        <img src="images/features-security-icon.svg" alt="security icon" id="fi-icon">
+                    </div>
+                    <div class="features_item_text">
+                        <h5>Data Security</h5>
+                        <p class="M_text">Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum non.</p>
+                    </div>
+                </div>
+
+                <div class="features_item">
+                    <div class="features_item_icon">
+                        <img src="images/features-statistics-icon.svg" alt="statistics icon" id="fi-icon">
+                    </div>
+                    <div class="features_item_text">
+                        <h5>Cost Statistics</h5>
+                        <p class="M_text">Mattis urna ultricies non amet, purus in auctor non. Odio vulputate ac nibh.</p>
+                    </div>
+                </div>
+
+                <div class="features_item">
+                    <div class="features_item_icon">
+                        <img src="images/features-support-icon.svg" alt="support icon" id="fi-icon">
+                    </div>
+                    <div class="features_item_text">
+                        <h5>Support 24/7</h5>
+                        <p class="M_text">A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
+                    </div>
+                </div>
+
+                <div class="features_item">
+                    <div class="features_item_icon">
+                        <img src="images/features-cashback-icon.svg" alt="cashback icon" id="fi-icon">
+                    </div>
+                    <div class="features_item_text">
+                        <h5>Regular Cashback</h5>
+                        <p class="M_text">Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet eleifend.</p>
+                    </div>
+                </div>
+
+                <div class="features_item">
+                    <div class="features_item_icon">
+                        <img src="images/features-happy-icon.svg" alt="happy icon" id="fi-icon">
+                    </div>
+                    <div class="features_item_text">
+                        <h5>Top Standards</h5>
+                        <p class="M_text">Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis dolor arcu.</p>
+                    </div>
+                </div>   
+            </div>
+        </section>
+    </div>
 </body>
 </html>
