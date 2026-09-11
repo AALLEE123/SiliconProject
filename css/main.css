@@ -100,12 +100,14 @@ p.M_text {font-size: 1rem;}
                     display: grid;
                     place-items: center;
                     border: 1px solid transparent;
-                    width: 2.5rem;
-                    height: 2.5rem;
+                    width: 2.75rem;
+                    height: 2.75rem;
                     border-radius: .5rem .5rem 0 0;
-                    padding-right: 0.125rem;
-                    padding-top: 0.06125rem;
                     
+                    #burger {
+                        font-size: 1.5rem;
+                        color: #131022;
+                    }
 
                     &.active {
                         background-color: #F1F4FD;
