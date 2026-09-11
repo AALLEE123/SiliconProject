@@ -12,7 +12,7 @@
     --headline-color: #131022;
     --background-color1: #ffffff;
     --background-color2: #F3F6FF;
-    --gradiant-color: linear-gradient(170deg,rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.06) 42%, rgba(241, 244, 253, 0.07) 83%);;
+    --gradiant-color: linear-gradient(350deg,rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.06) 42%, rgba(241, 244, 253, 0.07) 83%);;
     --brand-color: #6366F1; /*knappar, citat-tecken, pilar */
     --faq-answer-color: #585C7B;
     --faq-question-color: #131022;
@@ -71,7 +71,8 @@ p.M_text {font-size: 1rem;}
 
 
 .page1 {
-    background: linear-gradient(180deg,#FFFFFF 0%, #F1F4FD 100%);
+    background: var(--background-color1);
+    background: var(--gradiant-color);
     header {
         padding: .375rem;
         display: grid;
@@ -112,11 +113,11 @@ p.M_text {font-size: 1rem;}
                     
                     #burger {
                         font-size: 1.5rem;
-                        color: #131022;
+                        color: var(--text-color);
                     }
 
                     &.active {
-                        background-color: #F1F4FD;
+                        background-color: var(--background-color2);
                         box-shadow: -0px -2px 2px #0000007b;
                     }
 
@@ -133,7 +134,7 @@ p.M_text {font-size: 1rem;}
                     right: 0%;
                     border: solid 1px transparent;
                     border-radius: .5rem 0 .5rem .5rem;
-                    background-color: #F1F4FD;
+                    background-color: var(--background-color2);
                     box-shadow: -0px 0px 3px #0000007b;
 
                     .option {
@@ -141,12 +142,12 @@ p.M_text {font-size: 1rem;}
                         border: 1px solid transparent;
                         border-radius: .5rem;
                         text-align: center;
-                        background-color: #FFFFFF;
+                        background-color: var(--background-color1);
                     }
                     a {
                         white-space: nowrap;
                         display: block;
-                        color: #131022;
+                        color: var(--headline-color);
                         font-size: 1.5rem;
                         font-weight: 800;
                         &:hover {
@@ -184,7 +185,7 @@ p.M_text {font-size: 1rem;}
                 display: grid;
                 place-content: center;
                 height: 3rem;
-                background-color: #131022;
+                background-color: var(--headline-color);
                 border-radius: .5rem;
             }
             
@@ -198,7 +199,7 @@ p.M_text {font-size: 1rem;}
 
 
 .page2 {
-    background: #ffffff;
+    background: var(--background-color1);
     display: grid;
     justify-content: center;
 
@@ -242,7 +243,7 @@ p.M_text {font-size: 1rem;}
             width: 81rem;  
             row-gap: 2.5rem; 
             h2 {font-size: 2.5rem;} 
-            p.L_text {color: #9397ad; margin-top: -5rem;}
+            p.L_text {margin-top: -5rem;}
         }
 
         .app_features_phone {
@@ -293,7 +294,7 @@ p.M_text {font-size: 1rem;}
                 .features_item_icon {
                     height: 3.75rem;
                     width: 3.75rem;
-                    background-color: #F3F6FF;
+                    background-color: var(--background-color2);
                     border-radius: .5rem;
                     display: grid;
                     place-content: center;
