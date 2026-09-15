@@ -66,9 +66,14 @@ p.M_text {font-size: 1rem;}
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(12, minmax(0,1fr));
-    column-gap: 1.5rem;
+    column-gap: .5rem;
+    @media (width >= 712px) {
+        column-gap: 1rem;      
+        }
+    @media (width >= 1344px) {
+        column-gap: 1.5rem;   
+        }
 }
-
 
 .page1 {
     background: linear-gradient(180deg,#FFFFFF 0%, #F1F4FD 100%);
