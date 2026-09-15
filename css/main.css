@@ -318,7 +318,7 @@ p.M_text {font-size: 1rem;}
     gap: 1.5rem;
     grid-template-rows: auto auto 1fr;
     padding: 1rem;
-    border: 1px solid #E8EAEF;
+  
     border-radius: 12px; 
     background: #FFFFFF;
     
@@ -375,7 +375,7 @@ details[open] summary::after {
 
 .faqItem {
     padding: 1.25rem;
-    xborder: 1px solid #E8EAEF;
+    border: 1px solid #E8EAEF;
     border-radius: 8px 8px 0px 0px;
     background: #FFFFFF;
     margin-bottom: 0;
