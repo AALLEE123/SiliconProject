@@ -48,90 +48,88 @@ h1,h2,h3,h4,h5,h6,p {
     grid-template-rows: auto auto 1fr;
     xborder: solid 1px;
 
-.phone-layout {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    xgap: 24px;
-    xgrid-template-columns: 1fr 1fr 1fr;
-    xborder: solid 1px;
-    @media (width >= 712px) {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: .6rem;
-    }
-}
-
-.phone-image {
-    display: grid;
-    grid-template-areas: stack;
-    justify-items: center;
-    align-items: center;
-    xborder: solid 1px;
-    --height: 545px;
-    --width: 270px;
-    @media (width >= 712px) {
-        --height: 411px;
-        --width: 203px;
-    }
-
-    #left-phone-img {
-        grid-area: stack;
-        display: none;
-        height: var(--height);
-        width: var(--width);
-    }
-    #left-phone-container {
-        grid-area: stack;
-        display: none;
-        height: var(--height);
-        width: var(--width);
-    }
-    #middle-phone-img {
-        display: none;
-        height: var(--height);
-        width: var(--width);
-    }
-    #right-phone-img {
-        grid-area: stack;
-        height: var(--height);
-        width: var(--width);
-
-    }
-    #right-phone-container {
-        grid-area: stack;
-        height: var(--height);
-        width: var(--width);
-  
-    }
-    #phone_id {
-        display: none;
-        height: var(--height);
-        width: var(--width);
-    }
-    @media (width >= 712px) {
-        #phone-img {
-            display: none;
+    .phone-layout {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        xgap: 24px;
+        xgrid-template-columns: 1fr 1fr 1fr;
+        xborder: solid 1px;
+        @media (width >= 712px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: .6rem;
         }
-        #container-img {
-            display: none;
+    }
+
+    .phone-image {
+        display: grid;
+        grid-template-areas: stack;
+        justify-items: center;
+        align-items: center;
+        xborder: solid 1px;
+        --height: 545px;
+        --width: 270px;
+        @media (width >= 712px) {
+            --height: 411px;
+            --width: 203px;
         }
+
         #left-phone-img {
-            display: block;
+            grid-area: stack;
+            display: none;
+            height: var(--height);
+            width: var(--width);
         }
         #left-phone-container {
-            display: block;
+            grid-area: stack;
+            display: none;
+            height: var(--height);
+            width: var(--width);
         }
         #middle-phone-img {
-            display: block;
+            display: none;
+            height: var(--height);
+            width: var(--width);
         }
         #right-phone-img {
-            display: block;
+            grid-area: stack;
+            height: var(--height);
+            width: var(--width);
         }
         #right-phone-container {
-            display: block;
+            grid-area: stack;
+            height: var(--height);
+            width: var(--width);
+        }
+        #phone_id {
+            display: none;
+            height: var(--height);
+            width: var(--width);
+        }
+        @media (width >= 712px) {
+            #phone-img {
+                display: none;
+            }
+            #container-img {
+                display: none;
+            }
+            #left-phone-img {
+                display: block;
+            }
+            #left-phone-container {
+                display: block;
+            }
+            #middle-phone-img {
+                display: block;
+            }
+            #right-phone-img {
+                display: block;
+            }
+            #right-phone-container {
+                display: block;
+            }
         }
     }
-}
 
 
     .hero-item2 {
