@@ -3,8 +3,8 @@ Uppdelning:
         Header+Hero: hela gruppen
         App features: Viktor
         How Does It Work: Alexander
-        FAQ: Daniel
-        Contact+Subscribe+Footer: William
+        Contact + FAQ: Daniel
+        Subscribe + Footer: William
 
 Minsta Storlek:
 Mobil: 360px (>=4px padding - 352px content) ?
