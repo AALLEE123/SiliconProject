@@ -12,10 +12,11 @@
     --headline-color: #131022;
     --background-color1: #ffffff;
     --background-color2: #F3F6FF;
-    --gradiant-color: linear-gradient(170deg,rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.06) 42%, rgba(241, 244, 253, 0.07) 83%);;
+    --gradiant-color: linear-gradient(350deg,rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.06) 42%, rgba(241, 244, 253, 0.07) 83%);;
     --brand-color: #6366F1; /*knappar, citat-tecken, pilar */
     --faq-answer-color: #585C7B;
     --faq-question-color: #131022;
+    
 }
 
 html, body {
@@ -197,7 +198,6 @@ p.M_text {font-size: 1rem;}
         .log_in_btn {
             display: none; 
 
-
             @media (width >= 1344px) {
                 display: block;
                 a {
@@ -215,6 +215,7 @@ p.M_text {font-size: 1rem;}
             }
         }
     }
+
     .wrapper {
         display: grid;
         justify-content: center;
@@ -305,6 +306,7 @@ p.M_text {font-size: 1rem;}
                     display: grid;
                     place-items: center;
                     height: 3rem;
+                    padding-top: .125rem;
                     background-color: var(--headline-color);
                     border-radius: .5rem;
                     @media (width >= 712px) {
@@ -317,19 +319,24 @@ p.M_text {font-size: 1rem;}
                         height: 3rem;
                     }
                 }
+                
             }
-            
-            
-
-            
-
-            
-            
+            #btn_dark {
+                display: none;
+            }
         }
-
-
-
     }
-
+    &.dark {
+        .wrapper {
+            .hero {
+                #btn_dark {
+                    display: grid;
+                }
+                #btn_light {
+                    display: none;
+                }
+            }
+        }   
+    }
 }
 
