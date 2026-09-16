@@ -72,7 +72,7 @@ p {
 p.L_text {font-size: 1.125rem;}
 p.M_text {font-size: 1rem;}
 
-.grid_12 {
+.grid_12 { /* Grid system with 12 columns */
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(12, minmax(0,1fr));
@@ -85,15 +85,15 @@ p.M_text {font-size: 1rem;}
         }
 }
 
-.content_container {
+.content_container { /* Soft responsiveness system: Container( Padding | Content | Padding ) */
     display: flex;
     .content_padding {
         flex-basis: var(--padding);
-        flex-grow: 1;
+        flex-grow: 1; /* Increase to grow padding faster */
     }
     .content {
         flex-basis: var(--content-width);
-        flex-grow: 1;
+        flex-grow: 1; /* Increase to grow content faster */
     }
 }
 
