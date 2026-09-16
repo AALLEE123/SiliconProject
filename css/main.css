@@ -16,6 +16,17 @@
     --brand-color: #6366F1; /*knappar, citat-tecken, pilar */
     --faq-answer-color: #585C7B;
     --faq-question-color: #131022;
+
+    --padding: 6px;
+    --content-width: 348px;
+    @media (width >= 712px) {
+        --padding: 8px;
+        --content-width: 696px;
+    }
+    @media (width >= 1344px) {
+        --padding: 24px;
+        --content-width: 1296px;
+    }
 }
 
 html, body {
@@ -75,12 +86,25 @@ p.M_text {font-size: 1rem;}
         }
 }
 
+.content_container {
+    display: flex;
+    .content_padding {
+        flex-basis: var(--padding);
+        flex-grow: 1;
+    }
+    .content {
+        flex-basis: var(--content-width);
+        flex-grow: 1;
+    }
+}
+ 
+
 .page3 {
     xheight: 115px;
     background: #ffffff;
     xborder: solid 1px;
     display: grid;
-    justify-items: center;
+    xjustify-items: center;
     xjustify-content: center;
     align-items: start;
     gap: 24px;
@@ -89,8 +113,8 @@ p.M_text {font-size: 1rem;}
 
     .phone-layout {
         display: grid;
-        justify-items: center;
-        align-items: center;
+        xjustify-items: center;
+        xalign-items: center;
         xgap: 24px;
         xgrid-template-columns: 1fr 1fr 1fr;
         xborder: solid 1px;
@@ -102,49 +126,42 @@ p.M_text {font-size: 1rem;}
         .phone-image {
             display: grid;
             grid-template-areas: stack;
-            justify-items: center;
-            align-items: center;
-            xborder: solid 1px;
-            --height: 545px;
-            --width: 270px;
-            @media (width >= 552px) {
-                --height: 37.5rem;
-                --width: 18.75rem;
-            }
+            justify-content: center;
+            xalign-items: center;
+            border: solid 1px;
+            x--height: 545px;
+            x--width: 270px;
+            img {width: 100%;}
             @media (width >= 712px) {
-                --height: 25.6875remj;
-                --width: 12.6875rem;
-            }
-            @media (width >= 1064px) {
-                --height: 31.25rem;
-                --width: 16.25rem;
+                img {width: 100%} 
+                
             }
             @media (width >= 1344px) {
                 --height: 41.4375rem;
                 --width: 20.5rem;
             }
-
+            
             #mybudget-phone {
                 grid-area: stack;
                 display: block;
-                height: var(--height);
-                width: var(--width);    
+                zheight: var(--height);
+                zwidth: var(--width);    
             }
             #mycards-phone {
                 display: block;
-                height: var(--height);
-                width: var(--width);
+               zheight: var(--height);
+                zwidth: var(--width);
             }
             #balance-phone {
                 grid-area: stack;
-                height: var(--height);
-                width: var(--width);
+                zheight: var(--height);
+                zwidth: var(--width);
             }
             #transfer-phone {
                 grid-area: stack;
                 display: block;
-                height: var(--height);
-                width: var(--width);
+                xheight: var(--height);
+                xwidth: var(--width);
             }  
         }
 
@@ -171,19 +188,7 @@ p.M_text {font-size: 1rem;}
                 grid-column: 2;
             }
         }
-        @media (width >= 1064px) {
-            #transfer {
-                display: grid;
-                grid-column: 3;
-            }
-            #cards {
-                display: grid;
-                grid-column: 1;
-            }
-            #balance {
-                grid-column: 2;
-            }
-        }
+
         @media (width >= 1344px) {
             #budget {
                 display: grid;
