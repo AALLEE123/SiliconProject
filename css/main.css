@@ -78,7 +78,7 @@ p.M_text {font-size: 1rem;}
 .page3 {
     xheight: 115px;
     background: #ffffff;
-    border: solid 1px;
+    xborder: solid 1px;
     display: grid;
     justify-items: center;
     xjustify-content: center;
@@ -93,7 +93,7 @@ p.M_text {font-size: 1rem;}
         align-items: center;
         xgap: 24px;
         xgrid-template-columns: 1fr 1fr 1fr;
-        border: solid 1px;
+        xborder: solid 1px;
         @media (width >= 712px) {
             grid-template-columns: 1fr 1fr 1fr;
             gap: .6rem;
@@ -107,13 +107,21 @@ p.M_text {font-size: 1rem;}
             xborder: solid 1px;
             --height: 545px;
             --width: 270px;
+            @media (width >= 552px) {
+                --height: 37.5rem;
+                --width: 18.75rem;
+            }
             @media (width >= 712px) {
-                --height: 411px;
-                --width: 203px;
+                --height: 25.6875remj;
+                --width: 12.6875rem;
+            }
+            @media (width >= 1064px) {
+                --height: 31.25rem;
+                --width: 16.25rem;
             }
             @media (width >= 1344px) {
-                --height: 663px;
-                --width: 328px;
+                --height: 41.4375rem;
+                --width: 20.5rem;
             }
 
             #mybudget-phone {
@@ -149,7 +157,21 @@ p.M_text {font-size: 1rem;}
         #transfer {
             display: none;
         }
+
         @media (width >= 712px) {
+            #transfer {
+                display: grid;
+                grid-column: 3;
+            }
+            #cards {
+                display: grid;
+                grid-column: 1;
+            }
+            #balance {
+                grid-column: 2;
+            }
+        }
+        @media (width >= 1064px) {
             #transfer {
                 display: grid;
                 grid-column: 3;
