@@ -101,12 +101,10 @@ p.M_text {font-size: 1rem;}
     background: var(--background-color1);
     
     .content {
-        display: grid;
     
         .logos {
             display: none;
             @media (width >= 712px) {
-                xwidth: 100%;
                 margin-top: 3rem;
                 display: grid;
                 grid-column: 1 / -1;
@@ -116,7 +114,7 @@ p.M_text {font-size: 1rem;}
                 #logo6 {display: none;}
             }    
             @media (width >= 1344px) {
-                margin: 6rem 0rem 3rem;
+                margin-top: 6rem;
                 grid-template-columns: repeat(6, 1fr);
                 #logo5 {display: grid;}
                 #logo6 {display: grid;}   
@@ -135,13 +133,14 @@ p.M_text {font-size: 1rem;}
             margin: 3rem 0rem;
             row-gap: 2rem;
             @media (width >= 712px) {
-                margin: 4rem 0rem;
-                row-gap: 2.5rem;
+                margin: 4rem 0rem 6rem;
+                row-gap: 1.5rem;
             }
-            @media (width >= 1344px) {  
-                row-gap: 2.5rem; 
-                h2 {font-size: 2.5rem;} 
-                p.L_text {margin-top: -5rem;}
+            @media (width >= 1344px) { 
+                margin: 7rem 0rem 7rem; 
+                row-gap: 1rem; 
+                grid-template-rows: auto auto 1fr;
+                align-items: start;
             }
 
             .app_features_phone {
@@ -152,6 +151,12 @@ p.M_text {font-size: 1rem;}
                     grid-row: 1 / 4;
                 }
                 
+            }
+
+            h2 {
+                font-size: 1.75rem;
+                @media (width >= 712px) {font-size: 2.0rem;} 
+                @media (width >= 1344px) {font-size: 2.5rem;} 
             }
 
             h2, p.L_text {
@@ -169,25 +174,25 @@ p.M_text {font-size: 1rem;}
                 gap: 2rem;
                 @media (width >= 712px) {
                     grid-template-columns: 1fr 1fr;
-                    grid-template-rows: auto auto auto;    
+                    grid-template-rows: 1fr 1fr 1fr;    
                     gap: 2.5rem;
+                    margin-top: 1rem;
                 }
                 @media (width >= 1344px) {
                     grid-column: 6 / 13;
                     column-gap: 4.5rem;
-                    margin-top: -3rem;
-                    margin-bottom: 1rem;
+                    margin-top: 3rem;
                 }
 
                 .features_item {
                     display: grid;
                     grid-template-columns: auto 1fr;
-                    gap: 1rem;
+                    gap: 1.5rem;
                 
                     .features_item_text {
                         display: grid;
                         grid-template-rows: auto 1fr;
-                        gap: .5rem;
+                        gap: .75rem;
                     }
                     .features_item_icon {
                         height: 3.75rem;
