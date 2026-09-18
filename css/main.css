@@ -73,7 +73,7 @@ p {
 p.L_text {font-size: 1.125rem;}
 p.M_text {font-size: 1rem;}
 
-.grid_12 {
+.grid__12 {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(12, minmax(0,1fr));
@@ -86,9 +86,9 @@ p.M_text {font-size: 1rem;}
         }
 }
 
-.content_container {
+.content__container {
     display: flex;
-    .content_padding {
+    .content__padding {
         flex-basis: var(--padding);
         flex-grow: 1;
     }
@@ -112,12 +112,7 @@ p.M_text {font-size: 1rem;}
 
 .page3 {
     background-color: var(--background-color2);
-
     
-    
-
-
-
     .content {
         display: grid;
         grid-template-rows: auto auto auto auto;
@@ -141,7 +136,7 @@ p.M_text {font-size: 1rem;}
         }
         
 
-        .phone_layout {
+        .phone__layout {
             grid-column: 1/-1;
             grid-template-columns: 1fr;
             xborder: 2px solid;
@@ -152,7 +147,7 @@ p.M_text {font-size: 1rem;}
                 justify-content: space-evenly;
             }
             
-            .phone_image {
+            .phone__image {
                 display: grid;
                 grid-template-areas: stack; 
                 --w: 270px;
@@ -199,10 +194,6 @@ p.M_text {font-size: 1rem;}
                 }
             }
                 
-            
-            
-            
-
         }
 
 
@@ -234,18 +225,18 @@ p.M_text {font-size: 1rem;}
             }
         }
         
-        #transfer_text_tablet, #transfer_text_desktop, #lorem_2 {display: none;}
+        #transfer__text__tablet, #transfer__text__desktop, #lorem__2 {display: none;}
 
         @media (width >= 712px) {
-            #transfer_text_tablet {display: block;}
-            #transfer_text_mobile {display: none;}
+            #transfer__text__tablet {display: block;}
+            #transfer__text__mobile {display: none;}
         }
         @media (width >= 1344px) {
-            #transfer_text_tablet {display: none;}
-            #transfer_text_mobile {display: none;}
-            #transfer_text_desktop {display: block;}
-            #lorem_1 {display: none;}
-            #lorem_2 {display: block;}
+            #transfer__text__tablet {display: none;}
+            #transfer__text__mobile {display: none;}
+            #transfer__text__desktop {display: block;}
+            #lorem__1 {display: none;}
+            #lorem__2 {display: block;}
         }            
 
   
