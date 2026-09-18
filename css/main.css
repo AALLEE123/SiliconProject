@@ -70,10 +70,10 @@ p {
     line-height: 160%;
     color: var(--text-color);
 }
-p.L_text {font-size: 1.125rem;}
-p.M_text {font-size: 1rem;}
+p.L__text {font-size: 1.125rem;}
+p.M__text {font-size: 1rem;}
 
-.grid_12 {
+.grid__12 {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(12, minmax(0,1fr));
@@ -86,9 +86,9 @@ p.M_text {font-size: 1rem;}
         }
 }
 
-.content_container {
+.content__container {
     display: flex;
-    .content_padding {
+    .content__padding {
         flex-basis: var(--padding);
         flex-grow: 1;
     }
@@ -116,18 +116,18 @@ p.M_text {font-size: 1rem;}
             grid-template-columns: auto 1fr auto auto;
         }
 
-        .header_item {
+        .header__item {
             display: grid;
             align-items: center;
             align-content: center;
         }
 
-        .header_logo {
+        .header__logo {
             grid-template-columns: auto 1fr;
             gap: .375rem;
         }
 
-        .nav_bar {
+        .nav__bar {
             display: none;
             @media (width >= 1344px) {      
                 display: grid;
@@ -142,12 +142,12 @@ p.M_text {font-size: 1rem;}
         }
 
         .darkmode {
-            #darkmode_text {display: none;}
+            #darkmode__text {display: none;}
             @media (width >= 712px) {
                 display: grid;
                 grid-template-columns: auto auto;
                 gap: 1rem;
-                #darkmode_text {display:block; font-weight: 500;}
+                #darkmode__text {display:block; font-weight: 500;}
             }
         } 
         
@@ -155,7 +155,7 @@ p.M_text {font-size: 1rem;}
             .menu {
                 position: relative;
             
-                .select_box {
+                .select__box {
                     z-index: 3;
                     cursor: pointer;
                     position: relative;
@@ -218,7 +218,7 @@ p.M_text {font-size: 1rem;}
             }
         }
 
-        .log_in_btn {
+        .log__in__btn {
             display: none; 
 
             @media (width >= 1344px) {
@@ -239,7 +239,7 @@ p.M_text {font-size: 1rem;}
         }
     }
 
-    .hero_container {
+    .hero__container {
         
         .hero{
             position: relative;
@@ -258,7 +258,7 @@ p.M_text {font-size: 1rem;}
                 row-gap: 1.5rem;
             }
 
-            .hero_item {
+            .hero__item {
                 grid-column: 1/13;
                 display: grid;
                 text-align: center;
@@ -282,19 +282,19 @@ p.M_text {font-size: 1rem;}
                 }
             }
 
-            .hero_text {
+            .hero__text {
                 margin-bottom: 1.5rem;
-                #line_break{display: none;}
+                #line__break{display: none;}
                 @media (width >= 712px) {
                     grid-column: 1/6;
                     grid-row: 3;
                     text-align: start;
-                    #text_wrap{display: none;}
-                    #line_break{display: inline-block;}
+                    #text__wrap{display: none;}
+                    #line__break{display: inline-block;}
                 }
             }
 
-            .hero_image {
+            .hero__image {
                 display: none;
                 @media (width >= 712px) {
                     display: grid;
@@ -304,14 +304,14 @@ p.M_text {font-size: 1rem;}
                     grid-row: 2/6;
                 }
                 @media (width >= 1344px) {
-                    img {width: 100%;}
+                    img {width: 46.625rem;}
                     grid-column: 6/13;
                     grid-row: 1/6;
                 }
 
             }
            
-            .download_btns {
+            .download__btns {
                 gap: 1rem;
                 @media (width >= 712px) {
                     grid-column: 1/6;
@@ -324,7 +324,7 @@ p.M_text {font-size: 1rem;}
                     gap: 1.5rem;
                     padding-right: 2rem;
                 }
-                .download_btn {
+                .download__btn {
                     display: grid;
                     place-items: center;
                     height: 3rem;
@@ -343,18 +343,18 @@ p.M_text {font-size: 1rem;}
                 }
                 
             }
-            #btn_dark {
+            #btn__dark {
                 display: none;
             }
         }
     }
     &.dark {
-        .wrapper {
+        .hero__container {
             .hero {
-                #btn_dark {
+                #btn__dark {
                     display: grid;
                 }
-                #btn_light {
+                #btn__light {
                     display: none;
                 }
             }
