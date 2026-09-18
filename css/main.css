@@ -46,7 +46,7 @@ a {
     text-decoration: none;
     
     &:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
 
@@ -231,11 +231,12 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
                     grid-template-columns: auto auto;
                     place-items: center;
                     gap: .5rem;
-                    color: var(--background-color1);
                     width: fit-content;
                     padding: .5rem 1rem;
                     border-radius: .25rem;
                     background-color: var(--brand-color);
+                    color: var(--background-color1);
+                    p {color: var(--background-color1);}
                 }
             
             }
