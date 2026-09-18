@@ -41,6 +41,10 @@ html, body {
     
 }
 
+.dark {
+    
+}
+
 a {
     color: var(--text-color);
     text-decoration: none;
@@ -151,6 +155,55 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
                 grid-template-columns: auto auto;
                 gap: 1rem;
                 #darkmode__text {display:block; font-weight: 500;}
+            }
+            input[type="checkbox"] {
+                width: 0;
+                height: 0;
+                opacity: 0;
+            }
+            .toggle{
+                position: relative;
+                --_w: 46px;
+                --_h: 24px;
+            
+                width: var(--_w);
+                height: var(--_h);
+                border-radius: 12px; 
+
+                input[type="checkbox"] {
+                    width: 0;
+                    height: 0;
+                    opacity: 0;
+                }
+
+                .slider{
+                    position: absolute;
+                    inset: 0;
+                    cursor: pointer;
+                    background-color: var(--text-color-thin);
+                    border-radius: 12px;            
+                    transition: 400ms;
+                    
+                }
+                .slider::before{
+                    content: "";
+                    position: absolute;
+                    top: 3px;
+                    left: 3px;
+                    height: 18px;
+                    aspect-ratio: 1;
+                    border-radius: 50%;
+                    background-color: var(--background-color1);
+                    transition: 400ms;
+                }
+                input[type="checkbox"]:checked + .slider::before{
+                    left: calc(100% - 21px);
+                }
+                input[type="checkbox"]:checked + .slider{
+                    background-color: var(--brand-color);
+                }
+
+
             }
         } 
         
