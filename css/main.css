@@ -46,6 +46,7 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 800;
     color: var(--headline-color);
 }
+
 h1{font-size: 2.5rem;}
 h2{font-size: 2rem;}
 h3{font-size: 1.75rem;}
@@ -59,19 +60,124 @@ p {
     line-height: 160%;
     color: var(--text-color);
 }
-p.L_text {font-size: 1.125rem;}
-p.M_text {font-size: 1rem;}
 
-.grid_12 {
+/* --- DESKTOP APP FEATURE --- */
+.desktop-appfeature {
+    display: none;
+}
+
+@media (min-width: 1344px) {
+    .desktop-appfeature {
+        display: block;
+        padding-block: 80px;
+    }
+}
+
+
+
+.sub-container{
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(12, minmax(0,1fr));
     column-gap: .5rem;
-    @media (width >= 712px) {
-        column-gap: 1rem;      
-        }
-    @media (width >= 1344px) {
-        column-gap: 1.5rem;   
-        }
+
+
+.feature-row {
+    grid-column: 1 / -1;      /* spänner hela sub-container-bredden (12 kolumner) */
+    display: grid;
+    grid-template-columns: subgrid;  /* ärver kolumnindelningen från sub-container */
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 80px;
 }
 
+.feature-row .feature-text {
+    grid-column: span 6;      /* text tar 6 av 12 kolumner */
+}
+
+.feature-row .feature-visual {
+    grid-column: span 6;      /* bild tar 6 av 12 kolumner */
+    display: flex;
+}
+
+.feature-img {
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+.feature-text h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    color: #131022;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #4B5563;
+}
+
+.feature-list i {
+    color: #6366F1;
+}
+
+.learn-more-btn {
+    background-color: #6366F1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.learn-more-btn:hover {
+    background-color: #161a79;
+}
+
+.feature-columns {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.feature-col {
+    flex: 1;
+}
+
+.feature-icon {
+    font-size: 24px;
+    color: #6366F1;
+    background-color: #EEF2FF;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.feature-col p {
+    color: #6B7280;
+    font-size: 14px;
+    line-height: 1.6;
+}
+}
