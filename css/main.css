@@ -57,21 +57,24 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 800;
     color: var(--headline-color);
 }
-h1{font-size: 2.5rem;}
-h2{font-size: 2rem;}
-h3{font-size: 1.75rem;}
-h4{font-size: 1.5rem;}
-h5{font-size: 1.25rem;}
+h1{font-size: 2.125rem; @media (width >= 712px) {font-size: 2.75rem;} @media (width >= 1344px) {font-size: 3.5rem;}}
+h2{font-size: 1.75rem; @media (width >= 712px) {font-size: 2.1rem;} @media (width >= 1344px) {font-size: 2.5rem;}}
+h2.small {font-size: 2rem;}
+h3{font-size: 1.35rem; @media (width >= 712px) {font-size: 1.42rem;} @media (width >= 1344px) {font-size: 1.5rem;}}
+h4{font-size: 1.25rem;}
+h5{font-size: 1rem; font-weight: 600;}
 h6{font-size: 1rem;}
-
+ 
 p {
     padding:0;
     margin:0;
     line-height: 160%;
+    font-weight: 400;
     color: var(--text-color);
 }
-p.L_text {font-size: 1.125rem;}
-p.M_text {font-size: 1rem;}
+p.L__text {font-size: 1.125rem;}
+p.M__text {font-size: 1rem;}
+p.S__text {font-size: 0.875;}
 
 .grid__12 {
     display: grid;
@@ -126,13 +129,6 @@ p.M_text {font-size: 1rem;}
             grid-column: 1/-1;
             xborder: 2px solid green;
             text-align: center;
-            font-size: 1.75rem;
-            @media (width >= 712px) {
-                font-size: 2.1rem;
-            }
-            @media (width >= 1344px) {
-                font-size: 2.5rem;
-            }
         }
         
 
@@ -198,17 +194,14 @@ p.M_text {font-size: 1rem;}
 
 
         h3 {
-            font-size: 1.35rem;
             grid-column: 2/12;
             text-align: center;
             @media (width >= 712px) {
                 grid-column: 3/11; 
                 grid-row: 3;
-                font-size: 1.42rem;
             }
             @media (width >= 1344px) {
                 margin-top: -0.5rem;
-                font-size: 1.5rem;
             }
         }
         p {
@@ -242,219 +235,3 @@ p.M_text {font-size: 1rem;}
   
     }   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .page3 {
-    xheight: 115px;
-    background: #ffffff;
-    border: solid 1px;
-    display: grid;
-    xjustify-items: center;
-    xjustify-content: center;
-    align-items: start;
-    gap: 24px;
-    grid-template-rows: auto auto auto;
-    padding: 3rem 0;
-
-    .phone-layout {
-        display: grid;
-        xjustify-items: center;
-        xjustify-content: center;
-        xalign-items: center;
-        xgap: 24px;
-        xgrid-template-columns: 1fr 1fr 1fr;
-        border: solid 1px;
-        @media (width >= 712px) {
-            xgrid-template-columns: auto auto auto;
-            gap: .6rem;
-        }
-
-        .phone-image {
-            display: grid;
-            grid-template-areas: stack;
-            xjustify-content: center;
-            xjustify-items: center;
-            xalign-items: center;
-            border: solid 1px;
-            x--height: 545px;
-            x--width: 270px;
-            img {width: 100px;} 
-            @media (width >= 712px) {
-                img {width: 80%;} 
-                
-            }
-            @media (width >= 1344px) {
-                img {width: 80%;} 
-            }
-            
-            #mybudget-phone {
-                grid-area: stack;
-                display: block;
-                zheight: var(--height);
-                zwidth: var(--width);    
-            }
-            #mycards-phone {
-                grid-area: stack;
-                display: block;
-               zheight: var(--height);
-                zwidth: var(--width);
-            }
-            #balance-phone {
-                grid-area: stack;
-                display: block;
-                zheight: var(--height);
-                zwidth: var(--width);
-            }
-            #transfer-phone {
-                grid-area: stack;
-                display: block;
-                xheight: var(--height);
-                xwidth: var(--width);
-            }  
-        }
-
-        #budget {
-            display: none;
-        }
-        #cards {
-            display: none;
-        }
-        #transfer {
-            display: none;
-        }
-
-        @media (width >= 712px) {
-            #transfer {
-                display: grid;
-                grid-column: 3;
-            }
-            #cards {
-                display: grid;
-                grid-column: 1;
-            }
-            #balance {
-                grid-column: 2;
-            }
-        }
-
-        @media (width >= 1344px) {
-            #budget {
-                display: grid;
-                grid-column: 1;
-            }
-            #cards {
-                display: grid;
-                grid-column: 2;
-            }
-            #balance {
-                grid-column: 3;
-            }
-            #transfer {
-                display: none;
-                grid-column: 4;
-            }
-            xgap: 5rem;
-        }
-        
-
-    }
-
-    #transfer-text-tablet {
-        display: none;
-    }
-    #transaction-text-desktop {
-        display: none;
-    }
-    #lorem-2 {
-        display: none;
-    }
-
-    @media (width >= 712px) {
-            #transfer-text-mobile {
-                display: none;
-            }
-            #transfer-text-tablet {
-                display: block;
-            }
-            #transaction-text-desktop {
-                display: none;
-            }
-        }
-
-    @media (width >= 1344px) {
-            #transfer-text-tablet {
-                display: none;
-            }
-            #transaction-text-desktop {
-                display: block;
-            }
-            #lorem-2 {
-                display: block;
-            }
-            #lorem-1 {
-                display: none;
-            }
-        }
-
-    .text-container {
-        xborder: solid 1px;
-        display: grid;
-        justify-items: center;
-        gap: 1rem;
-        h3 {
-            text-align: center;
-            color: #131022;
-            font-size: 1.35rem;
-            xwidth: 16.875rem;
-            xheight: 60px;
-            xborder: solid 1px;
-            @media (width >= 712px) {
-                xwidth: 29.125rem;
-            }
-            @media (width >= 1344px) {
-                xwidth: 29.125rem;
-                font-size: 1.5rem;
-            }
-        }
-        p {
-            text-align: center;
-            color: #585C7B;
-            width: 21.75rem;
-            height: 4.8125rem;
-            @media (width >= 712px) {
-                width: 28.125rem;
-                height: 4.8125rem;
-            }
-            @media (width >= 1344px) {
-                width: 38.75rem;
-                height: 4.8125rem;
-            }
-        }
-    }
-
-    h1 {
-        text-align: center;
-        color: #131022;
-        xborder: solid 1px;
-        font-size: 27.9px;
-    }
-    
-} */
