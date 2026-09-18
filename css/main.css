@@ -57,13 +57,12 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 800;
     color: var(--headline-color);
 }
-h1{font-size: 2.125rem; @media (width >= 712px) {font-size: 2.75rem;} @media (width >= 1344px) {font-size: 3.5rem;}}
-h2{font-size: 1.75rem; @media (width >= 712px) {font-size: 2.1rem;} @media (width >= 1344px) {font-size: 2.5rem;}}
-h2.small {font-size: 2rem;}
-h3{font-size: 1.35rem; @media (width >= 712px) {font-size: 1.42rem;} @media (width >= 1344px) {font-size: 1.5rem;}}
-h4{font-size: 1.25rem;}
-h5{font-size: 1rem; font-weight: 600;}
-h6{font-size: 1rem;}
+h1{font-size: 2.125rem; @media (width >= 712px) {font-size: 2.75rem;} @media (width >= 1344px) {font-size: 3.5rem;}} /* Hero */
+h2{font-size: 1.75rem; @media (width >= 712px) {font-size: 2.1rem;} @media (width >= 1344px) {font-size: 2.5rem;}} /* App features, HDIW, Testimonials */
+h2.small {font-size: 2rem;} /* App features page 4 desktop, FAQ tablet och desktop */
+h3{font-size: 1.35rem; @media (width >= 712px) {font-size: 1.42rem;} @media (width >= 1344px) {font-size: 1.5rem;}} /* HDIW, FAQ mobile */
+h4{font-size: 1.25rem;} /* App features */
+h5{font-size: 1rem; font-weight: 600;} /* FAQ */
  
 p {
     padding:0;
@@ -72,9 +71,9 @@ p {
     font-weight: 400;
     color: var(--text-color);
 }
-p.L__text {font-size: 1.125rem;}
-p.M__text {font-size: 1rem;}
-p.S__text {font-size: 0.875;}
+p.L__text {font-size: 1.125rem;} /* 18px */
+p.M__text {font-size: 1rem;} /* 16px */
+p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
 
 .grid__12 {
     display: grid;
@@ -113,10 +112,12 @@ p.S__text {font-size: 0.875;}
     --faq-question-color: #131022;
 }
 
+/* Page 3 sätter background color */
 .page3 {
     background-color: var(--background-color2);
-    
+    /* Styling för hela sidan och hur det ligger i olika storlekar */
     .content {
+        xborder: 2px solid;
         display: grid;
         grid-template-rows: auto auto auto auto;
         margin: 4.5rem 0 4rem;
@@ -124,14 +125,14 @@ p.S__text {font-size: 0.875;}
             @media (width >= 712px) {margin: 5rem 0 4.5rem; row-gap: 3rem;}
             @media (width >= 1344px) {margin: 5rem 0 6rem; row-gap: 3rem;}
         
-    
+        /* h2 styling och hur den ligger */
         h2 {
             grid-column: 1/-1;
             xborder: 2px solid green;
             text-align: center;
         }
         
-
+        /* Alla mobiler och hur de ligger i olika storlekar */
         .phone__layout {
             grid-column: 1/-1;
             grid-template-columns: 1fr;
@@ -142,9 +143,10 @@ p.S__text {font-size: 0.875;}
                 grid-template-columns: auto;
                 justify-content: space-evenly;
             }
-            
+            /* Storlek, stack och hur varje mobil ligger i vilken storlek */
             .phone__image {
                 display: grid;
+                xborder: 2px solid;
                 grid-template-areas: stack; 
                 --w: 270px;
                 @media (width >= 712px) {
@@ -158,7 +160,7 @@ p.S__text {font-size: 0.875;}
                     grid-area: stack;  
                 }
             }
-
+            /* Var mobilerna ligger i vilken storlek */
             #budget, #cards, #transfer { display: none; }
             @media (width >= 712px) {
                 #cards {
@@ -192,7 +194,7 @@ p.S__text {font-size: 0.875;}
                 
         }
 
-
+        /* Styling h3,p och media för hur texten ligger i vilken storlek */
         h3 {
             grid-column: 2/12;
             text-align: center;
