@@ -12,6 +12,10 @@
     --headline-color: #131022;
     --background-color1: #ffffff;
     --background-color2: #F3F6FF;
+    
+    --logo-border-color: #e2e5f1;
+    --icon-background-color: #F3F6FF;
+
     --gradiant-color: linear-gradient(350deg,rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.06) 42%, rgba(241, 244, 253, 0.07) 83%);;
     --brand-color: #6366F1; /*knappar, citat-tecken, pilar */
     --faq-answer-color: #585C7B;
@@ -26,6 +30,24 @@
         --padding: 24px;
         --content-width: 1296px;
     }
+}
+
+.dark {
+    --text-color: #b5b7ba;
+    --text-color-thin:#9397AD;
+    --headline-color: #FFFFFF;
+    --background-color1: #0b0f19;
+    --background-color2: #151822;    
+    --gradiant-color: linear-gradient(350deg,rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.06) 42%, rgba(241, 244, 253, 0.07) 83%);
+    
+    --logo-border-color: #363443;
+    --icon-background-color: #12162a;
+
+    --download-button-color: #eff2fc;
+    --brand-color: #6366F1; /*knappar, citat-tecken, pilar */
+    --button-text-color: #FFFFFF;
+    --faq-answer-color: #585C7B;
+    --faq-question-color: #131022;
 }
 
 html, body {
@@ -125,7 +147,7 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
 
             .logo__item {
                 height: 6.25rem;
-                border: solid 1px #e2e5f1;
+                border: solid 1px var(--logo-border-color);
                 border-radius: .5rem;
                 display: grid;
                 place-content: center;
@@ -194,7 +216,7 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
                     .features__item__icon {
                         height: 3.75rem;
                         width: 3.75rem;
-                        background-color: var(--background-color2);
+                        background-color: var(--icon-background-color);
                         border-radius: .5rem;
                         display: grid;
                         place-content: center;
