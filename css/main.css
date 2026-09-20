@@ -669,7 +669,7 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
 .pageaf {
     display: none;
     @media (min-width: 1344px) {
-        display: block;
+        display: flex;
         padding-block: 80px;    
     }
 
@@ -685,7 +685,7 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
 
     @media (min-width: 1344px) {
         .sub-container {
-            max-width: 1296px;
+            xmax-width: 1296px;
             margin-inline: auto;
             padding-inline: 24px;
             column-gap: 1.5rem;
@@ -693,9 +693,9 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
     }
 
     .feature-row {
-        grid-column: 1 / -1;      /* spänner hela sub-container-bredden (12 kolumner) */
+        grid-column: 1 / -1;      
         display: grid;
-        grid-template-columns: subgrid;  /* ärver kolumnindelningen från sub-container */
+        grid-template-columns: subgrid; 
         align-items: center;
         gap: 24px;
         margin-bottom: 80px;
@@ -797,6 +797,7 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
 
 
 .page4 {
+    background: var(--background-color1);
     .faqSection {
         display: grid;
         justify-items: stretch;
@@ -804,8 +805,6 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
         gap: 1.5rem;
         grid-template-rows: auto auto 1fr;
         padding: 1rem;
-        background: var(--background-color1);
-    
         h1 {
             margin: 1.5rem 0 0.5rem 0;
             color: var(--headline-color);
