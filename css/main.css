@@ -666,7 +666,7 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
     }  
 }
 
-.desktop-appfeature {
+.pageaf {
     display: none;
     @media (min-width: 1344px) {
         display: block;

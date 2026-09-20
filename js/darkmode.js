@@ -7,7 +7,7 @@ const page2 = document.querySelector('.page2')
 const page3 = document.querySelector('.page3')
 const page4 = document.querySelector('.page4')
 const page5 = document.querySelector('.page5')
-const pageaf2 = document.querySelector('.pageaf2')
+const pageaf = document.querySelector('.pageaf')
 const paget = document.querySelector('.paget')
 
 if(hasDarkmode == null) {
@@ -42,6 +42,7 @@ function enableDarkmode() {
     page1.classList.add('dark')
     page2.classList.add('dark')
     page3.classList.add('dark')
+    pageaf.classList.add('dark')
     page4.classList.add('dark')
     page5.classList.add('dark')
 }
@@ -50,6 +51,7 @@ function disableDarkmode() {
     page1.classList.remove('dark')
     page2.classList.remove('dark')
     page3.classList.remove('dark')
+    pageaf.classList.remove('dark')
     page4.classList.remove('dark')
     page5.classList.remove('dark')
 }
