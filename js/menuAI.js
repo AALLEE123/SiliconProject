@@ -1,22 +1,18 @@
+/* Gjorde med AI för att testa */
+
 document.addEventListener("DOMContentLoaded", () => {
-    /*const selectBox = document.querySelector(".select-box")
-    const options = document.querySelector(".options")
-    const selected = document.querySelector(".selected")
-    const hiddenInput = document.querySelector("#selected-value")
-    const optionsElements = document.querySelectorAll(".option")*/
-    
     const selectBox = document.querySelector(".select__box")
     const options = document.querySelector(".options")
     const optionsElements = document.querySelectorAll(".option")
+
+    if (!selectBox || !options) return
 
     selectBox.addEventListener("click", function() {
         selectBox.classList.toggle("active")
     })
 
     optionsElements.forEach(option => {
-        option.addEventListener('click', function() {   
-            /*selected.textContent = this.textContent
-            hiddenInput.value = this.DataTransferItem.value */       
+        option.addEventListener('click', function() {
             selectBox.classList.remove("active")
         })
     })
