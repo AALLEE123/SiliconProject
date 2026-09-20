@@ -40,8 +40,16 @@ darkmodeSwitch.addEventListener('change', () => {
 function enableDarkmode() {
     darkmodeSwitch.checked = true
     page1.classList.add('dark')
+    page2.classList.add('dark')
+    page3.classList.add('dark')
+    page4.classList.add('dark')
+    page5.classList.add('dark')
 }
 function disableDarkmode() {
     darkmodeSwitch.checked = false
     page1.classList.remove('dark')
+    page2.classList.remove('dark')
+    page3.classList.remove('dark')
+    page4.classList.remove('dark')
+    page5.classList.remove('dark')
 }
