@@ -43,6 +43,7 @@ function enableDarkmode() {
     page2.classList.add('dark')
     page3.classList.add('dark')
     pageaf.classList.add('dark')
+
     pageT.classList.add('dark')
     page4.classList.add('dark')
     page5.classList.add('dark')
@@ -53,6 +54,7 @@ function disableDarkmode() {
     page2.classList.remove('dark')
     page3.classList.remove('dark')
     pageaf.classList.remove('dark')
+
     pageT.classList.remove('dark')
     page4.classList.remove('dark')
     page5.classList.remove('dark')
