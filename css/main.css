@@ -21,6 +21,9 @@
     
     --brand-color: #6366F1; /*knappar, citat-tecken, pilar */
     --button-text-color: #FFFFFF;
+
+    --testi-card-color: #ffffff;
+
     --faq-answer-color: #585C7B;
     --faq-question-color: #131022;
     
@@ -43,14 +46,18 @@
     --background-color1: #0b0f19;
     --background-color2: #151822;    
     --gradiant-color: linear-gradient(350deg,rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.06) 42%, rgba(241, 244, 253, 0.07) 83%);
-    
+    --logo-border-color: #363443;
+    --icon-background-color: #12162a;
+
     --download-button-color: #eff2fc;
     --brand-color: #6366F1; /*knappar, citat-tecken, pilar */
     --button-text-color: #FFFFFF;
+
+    --testi-card-color: #1e212b;
+
     --faq-answer-color: #585C7B;
     --faq-question-color: #131022;
-    --logo-border-color: #363443;
-    --icon-background-color: #12162a;
+  
 }
 
 
@@ -794,7 +801,74 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
     }
 }
 
+.pageT {
+    background-color: var(--background-color2);
+    display: none;
+    @media (width >= 1344px) {
+        display: flex;
+    }
 
+    .testimonials {
+        margin: 5rem 0 7rem;
+
+        .testimonials__headline {
+            grid-column: 1/4;
+        }
+
+        #testi__1 {
+            grid-column: 5/9;
+        }
+        #testi__2 {
+            grid-column: 9/13;
+        }
+
+        .testimonial__card {
+            margin-top: 1.25rem;
+            border-radius: .5rem;
+            background-color: var(--testi-card-color);
+            padding: 1.5rem;  
+            display: grid;  
+            grid-template-rows: auto 1fr auto;
+            gap: 1.5rem;
+            position: relative;
+
+            .testi__icon {
+                position: absolute;
+                left: 1.5rem;
+                top: -1.75rem;
+
+
+                display: grid;
+                place-items: center;
+                height: 2.75rem;
+                aspect-ratio: 1;
+                border-radius: .5rem;
+                background-color: var(--brand-color);
+                color: var(--button-text-color);
+                font-size: 1.5rem;
+                box-shadow: 0 .75rem 1rem -.75rem var(--brand-color);
+            }
+
+            .testi__rating {
+                margin-top: 1.5rem;
+            }
+
+            .from__who {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                gap: 1rem;
+
+                .name__text {
+                    font-weight: 700;
+                }
+                .S__text {
+                    color: var(--text-color-thin);
+                }
+
+            }
+        }
+    }
+}
 
 .page4 {
     background: var(--background-color1);
