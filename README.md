@@ -16,7 +16,7 @@ Uppdelning:
         App features: Viktor
         How Does It Work: Alexander
         App features p2: William
-        Testimonials: Daniel
+        Testimonials: Viktor
         Contact + FAQ: Daniel
         Subscribe + Footer: William
 
