@@ -1023,17 +1023,13 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
 }
 
 .page5 {
-
     background-color: var(--background-color1);
 
     .box {
-        xwidth: 80%;
         min-height: 251px;
-        xmargin: 0 auto;
         border-radius: 8px;
         border: none;
         background-color: var(--icon-background-color);
-        xpadding: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1071,7 +1067,6 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
 
     .email-box {
         display: flex;
-        xwidth: 100%;
         max-width: 340px;
         justify-content: center;
         align-items: center;
@@ -1083,7 +1078,6 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
     .subscribe-btn {
         flex: 0 1 100px;
         height: 52.3px;
-        xmin-width: 110px;
         padding: 0 20px;
         border: none;
         border-radius: 0 12px 12px 0;
@@ -1109,8 +1103,6 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
     }
 
     .footer {
-        xwidth: 100%;
-        xmax-width: 390px;
         text-align: center;
         color: var;
         margin: auto
