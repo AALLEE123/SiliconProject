@@ -16,6 +16,11 @@
     --download-button-color: #131022;
     --logo-border-color: #e2e5f1;
     --icon-background-color: #F3F6FF;
+    --faq-answer-color: #585C7B;
+    --faq-question-color: #131022;
+    --faq-border-color: #e3dee9;
+    --faq-box-shadow: 0 2px 8px rgba(19, 16, 34, 0.08);
+    --faq-background-color: #ffffff;
     
     
     
@@ -24,8 +29,6 @@
 
     --testi-card-color: #ffffff;
 
-    --faq-answer-color: #585C7B;
-    --faq-question-color: #131022;
     
     --padding: 6px;
     --content-width: 348px;
@@ -48,6 +51,11 @@
     --gradiant-color: linear-gradient(350deg,rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.06) 42%, rgba(241, 244, 253, 0.07) 83%);
     --logo-border-color: #363443;
     --icon-background-color: #12162a;
+    --faq-answer-color: #585C7B;
+    --faq-question-color: #131022;
+    --faq-border-color: #383b43;
+    --faq-box-shadow: none;
+    --faq-background-color: #151822;
 
     --download-button-color: #eff2fc;
     --brand-color: #6366F1; /*knappar, citat-tecken, pilar */
@@ -55,8 +63,6 @@
 
     --testi-card-color: #1e212b;
 
-    --faq-answer-color: #585C7B;
-    --faq-question-color: #131022;
   
 }
 
@@ -870,144 +876,133 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
 
 .page4 {
     background: var(--background-color1);
+
     .faqSection {
         display: grid;
-        justify-items: stretch;
         align-items: start;
         gap: 1.5rem;
         grid-template-rows: auto auto 1fr;
-        padding: 1rem;
+        margin-bottom: 2.5rem;
+       
         h1 {
             margin: 1.5rem 0 0.5rem 0;
             color: var(--headline-color);
             font-weight: 800;
             font-size: 1.6rem;
             text-align: center;
+        
         }
-    
+
         p {
-            color: var(--text-color2);
-            margin: 0 0 1.5rem 0;
-            text-align: center;
-            font-weight: 400;
+            color: var(--text-color);
         }
-    
+
     }
-    
+
     .faqList {
         display: grid;
         gap: 1rem;
-        padding: 0;
-        margin: 0;
     }
-    
+
     details summary {
         list-style: none;
         cursor: pointer;
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
-        /** viktigt: toppa-align, inte center ***/
+        align-items: center;
         gap: 1rem;
     }
-    
+
     .faqQuestion {
         font-weight: 600;
-        color: var(--text-color1);
-        flex: 1;
-        /*** gör att frågan tar plats och skjuter svgs åt höger */
+        color: var(--headline-color);
         padding-top: 0.25rem;
-        gap: 1rem;
+
     }
-    
-    /* https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Selectors/ */
+
     details summary::after {
         content: '';
         width: 2.5em;
         height: 2.5em;
-        min-width: 2.5em;
-        min-height: 2.5em;
         background: url('/images/FAQ/whiteArrow.svg') no-repeat center;
         background-size: contain;
         border-radius: 50%;
         flex-shrink: 0;
-        /** stänger av flex på pil-knapparna*/
+
     }
-    
+
     details[open] summary::after {
         background: url('/images/FAQ/blueArrow.svg') no-repeat center;
         background-size: contain;
     }
-    
+
+    &.dark details:not([open]) summary::after {
+        background: url('/images/FAQ/darkArrow.svg') no-repeat center; /* Byter till mörk pil i dark mode */
+    }
+
+    .faqIntro {
+        text-align: center;
+    }
+
+    details[open]{
+        border: 1px solid var(--faq-border-color);
+    }
+
     .faqItem {
         padding: 1.25rem;
-        box-shadow: 0 2px 8px rgba(19, 16, 34, 0.08);
-        background: var(--background-color1);
-        margin-bottom: 0;
+        box-shadow: var(--faq-box-shadow);
+        background: var(--faq-background-color);
         border-radius: 12px;
-    
+        
     }
-    
+
     .faqAnswer {
-        display: block;
         margin-top: 1rem;
         line-height: 1.6;
-        color: var(--text-color2);
+        color: var(--text-color);
     }
-    
+
     .faqTablet {
         display: none;
-    
+
         @media (width >=712px) {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            /*två lika stora kollumer */
             gap: 2rem;
-            padding: 1rem;
         }
-    
-        .callUs {
+
+        .callUs, .textUs {
             display: flex;
             flex-direction: column;
             align-items: start;
             gap: 1rem;
-            border: 1px solid #E8EAEF;
+            border: 1px solid var(--faq-border-color);
             border-radius: 12px;
-            padding: 1.5rem;
+            padding: 1.5rem 1.3rem; /* höger-vänster bredare för att fixa text*/
+            font-size: 14px;
         }
-    
-        .textUs {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            gap: 1rem;
-            border: 1px solid #E8EAEF;
-            border-radius: 12px;
-            padding: 1.5rem;
-        }
-    
+
         .callUs a {
             color: #6366F1;
-            font-weight: 600;
             text-decoration: none;
+            font-weight: 600;
         }
-    
+
         .textUs a {
             color: #22C55E;
-            font-weight: 600;
             text-decoration: none;
+            font-weight: 600px;
         }
-    
+
     }
-    
-    
+
     .contactButton {
         display: none;
-    
+
         @media (width < 712px) {
             display: flex;
             justify-content: center;
-    
+
             .contactLink {
                 display: flex;
                 justify-content: center;
@@ -1017,9 +1012,52 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
                 height: 3rem;
                 border-radius: 0.5rem;
                 align-items: center;
+                
             }
         }
     }
+   
+}
+@media (width >= 1344px) {
+    .page4 .faqSection {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        column-gap: 1.5rem;
+        row-gap: 1rem;
+        padding: 3rem;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+
+    .page4 .faqSection h1 {
+        grid-column: 1 / 5;
+        grid-row: 1;
+        margin: 0;
+        text-align: left;
+    }
+
+    .page4 .faqSection .faqIntro {
+        grid-column: 1 / 5;
+        grid-row: 2;
+        margin: 0;
+        text-align: left;
+    }
+
+    .page4 .faqSection .faqTablet {
+        grid-column: 1 / 5;
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .page4 .faqSection .faqList {
+        grid-column: 6 / 13;
+        grid-row: 1 / 4;
+    }
+
+
 }
 
 .page5 {
