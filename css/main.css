@@ -84,12 +84,6 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 800;
     color: var(--headline-color);
 }
-xh1{font-size: 2.125rem; @media (width >= 712px) {font-size: 2.75rem;} @media (width >= 1344px) {font-size: 3.5rem;}} /* Hero */
-xh2{font-size: 1.75rem; @media (width >= 712px) {font-size: 2.1rem;} @media (width >= 1344px) {font-size: 2.5rem;}} /* App features, HDIW, Testimonials */
-xh2.small {font-size: 2rem;} /* App features page- 4 desktop, FAQ tablet och desktop */
-xh3{font-size: 1.35rem; @media (width >= 712px) {font-size: 1.42rem;} @media (width >= 1344px) {font-size: 1.5rem;}} /* HDIW, FAQ mobile */
-xh4{font-size: 1.25rem;} /* App features */
-xh5{font-size: 1rem; font-weight: 600;} /* FAQ */
  
 p {
     padding:0;
@@ -100,7 +94,7 @@ p {
 }
 p.L-text {font-size: 1.125rem;} /* 18px */
 p.M-text {font-size: 1rem;} /* 16px */
-p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
+p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
  
 /* --- GRID-12 SYSTEM --- */
 .grid-12 { /* --- Twelve columns separated by gap size --- */
@@ -497,7 +491,6 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
                     grid-column: 1 / 1;
                     grid-row: 1 / 4;
                 }
-                
             }
 
             h2 {font-size: 1.75rem; @media (width >= 712px) {font-size: 2.1rem;} @media (width >= 1344px) {font-size: 2.5rem;}}
@@ -533,7 +526,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
                     gap: 1.5rem;
                     h3 {font-size: 1.35rem;}
                 
-                    .features-iteM-text {
+                    .features-item-text {
                         display: grid;
                         grid-template-rows: auto 1fr;
                         gap: .75rem;
@@ -811,7 +804,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
     }
 }
 
-/* --- DESKTOP TESTIMONIALS --- */
+/* --- TESTIMONIALS --- */
 .page-T {
     background-color: var(--background-color2);
     display: none;
@@ -849,8 +842,6 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
                 position: absolute;
                 left: 1.5rem;
                 top: -1.75rem;
-
-
                 display: grid;
                 place-items: center;
                 height: 2.75rem;
