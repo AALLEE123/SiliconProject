@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const hiddenInput = document.querySelector("#selected-value")
     const optionsElements = document.querySelectorAll(".option")*/
     
-    const selectBox = document.querySelector(".select__box")
+    const selectBox = document.querySelector(".select-box")
     const options = document.querySelector(".options")
     const optionsElements = document.querySelectorAll(".option")
 
