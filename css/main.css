@@ -21,15 +21,11 @@
     --faq-border-color: #e3dee9;
     --faq-box-shadow: 0 2px 8px rgba(19, 16, 34, 0.08);
     --faq-background-color: #ffffff;
-    
-    
-    
     --brand-color: #6366F1; /*knappar, citat-tecken, pilar */
     --button-text-color: #FFFFFF;
-
     --testi-card-color: #ffffff;
-
-    
+ 
+    /* --- RESPONSIVENESS SYSTEM VARIABLES--- */
     --padding: 6px;
     --content-width: 348px;
     @media (width >= 712px) {
@@ -56,16 +52,11 @@
     --faq-border-color: #383b43;
     --faq-box-shadow: none;
     --faq-background-color: #151822;
-
     --download-button-color: #eff2fc;
     --brand-color: #6366F1; /*knappar, citat-tecken, pilar */
     --button-text-color: #FFFFFF;
-
     --testi-card-color: #1e212b;
-
-  
 }
-
 
 html, body {
     scroll-behavior: smooth;
@@ -74,9 +65,7 @@ html, body {
     background-color: var(--background-color1);
     font-family: "Manrope", sans-serif;
     font-size: 16px;
-    
-    font-style: normal;
-    
+    font-style: normal; 
 }
 
 a {
@@ -113,7 +102,7 @@ p.L-text {font-size: 1.125rem;} /* 18px */
 p.M-text {font-size: 1rem;} /* 16px */
 p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
  
-
+/* --- GRID-12 SYSTEM --- */
 .grid-12 {
     display: grid;
     justify-content: center;
@@ -127,6 +116,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
         }
 }
 
+/* --- RESPONSIVENESS SYSTEM --- */
 .content-container {
     display: flex;
     .content-padding {
@@ -139,7 +129,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
     }
 }
 
-
+/* --- HEADER + HERO --- */
 .page-1 {
     background-color: var(--background-color1);
     background-image: var(--gradiant-color);
@@ -453,6 +443,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
     }
 }
 
+/* --- APP FEATURES --- */
 .page-2 {
     background: var(--background-color1);
     
@@ -562,8 +553,8 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
     }
 }
 
-/* page- 3 sätter background color */
-.page-3 {
+/* --- HOW DOES IT WORK --- */
+.page-3 { /* page- 3 sätter background color */
     background-color: var(--background-color2);
     /* Styling för hela sidan och hur det ligger i olika storlekar */
     .content {
@@ -698,7 +689,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
     }  
 }
 
-/* --- DESKTOP APP FEATURE --- */
+/* --- DESKTOP APP FEATURES --- */
 .page-af {
     display: none;
     background-color: var(--background-color1);
@@ -824,6 +815,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
     }
 }
 
+/* --- DESKTOP TESTIMONIALS --- */
 .page-T {
     background-color: var(--background-color2);
     display: none;
@@ -897,6 +889,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
     }
 }
 
+/* --- FAQ --- */
 .page-4 {
     background: var(--background-color1);
 
@@ -1083,6 +1076,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
 
 }
 
+/* --- SUBSCRIBE + FOOTER --- */
 .page-5 {
     background-color: var(--background-color1);
 

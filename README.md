@@ -18,11 +18,11 @@ Namnkonvention: kebab-case |
 Kommentarer om projektet:
 
 
-Hero + Header -
+Hero + Header - För att få bakgrunds gradienten att täcka både header och heron så lades både sektioner under samma page-1 wrapper.
 
-App Features -
+App Features - 
 
-HDIW -
+HDIW - Jag valde att lägga skal på alla telefoner för jag tyckte det såg tomt ut utan skal. Det blev helt enkelt snyggare med skal på varje telefon. 
 
 App Features 2 -
 
