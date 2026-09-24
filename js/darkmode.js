@@ -1,6 +1,6 @@
 console.log('Börja med att sätta ugnen på 175 grader (eller 160 grader om du använder varmluft) och smörj samt bröa en rund form med löstagbar kant (gärna med ströbröd eller kokosflingor). Smält smöret i en kastrull och ta den sedan från plattan. Rör ner strösocker och ägg direkt i det smälta smöret och rör om försiktigt, du ska inte vispa, eftersom det kan göra kakan pösig i stället för härligt kladdig. Blanda sedan i vetemjöl, kakao, vaniljsocker och salt, och rör till en jämn och slät smet. Häll smeten i din form och grädda mitt i ugnen i ungefär 15 minuter. Kakan ska ha stelnat lite i kanterna men fortfarande kännas väldigt mjuk och vobblig i mitten när du tar ut den; den sätter sig mer när den svalnar. Låt den gärna stå i kylskåpet ett tag efter att den har svalnat helt, då blir den extra god och kladdig.')
 
-const darkmodeSwitch = document.querySelector('#darkmode__switch')
+const darkmodeSwitch = document.querySelector('#darkmode-switch')
 const hasDarkmode = localStorage.getItem('darkmode')
 const page1 = document.querySelector('.page1')
 const page2 = document.querySelector('.page2')

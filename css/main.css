@@ -109,12 +109,12 @@ p {
     font-weight: 400;
     color: var(--text-color);
 }
-p.L__text {font-size: 1.125rem;} /* 18px */
-p.M__text {font-size: 1rem;} /* 16px */
-p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
+p.L-text {font-size: 1.125rem;} /* 18px */
+p.M-text {font-size: 1rem;} /* 16px */
+p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
  
 
-.grid__12 {
+.grid-12 {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(12, minmax(0,1fr));
@@ -127,9 +127,9 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
         }
 }
 
-.content__container {
+.content-container {
     display: flex;
-    .content__padding {
+    .content-padding {
         flex-basis: var(--padding);
         flex-grow: 1;
     }
@@ -158,13 +158,13 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
             grid-template-columns: auto 1fr auto auto;
         }
 
-        .header__item {
+        .header-item {
             display: grid;
             align-items: center;
             align-content: center;
         }
 
-        .header__logo {
+        .header-logo {
             grid-template-columns: auto 1fr;
             gap: .5rem;
             font-size: 1.3rem;
@@ -172,7 +172,7 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
             font-weight: 700;
         }
 
-        .nav__bar {
+        .nav-bar {
             display: none;
             @media (width >= 1344px) {      
                 display: grid;
@@ -187,12 +187,12 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
         }
 
         .darkmode {
-            #darkmode__text {display: none;}
+            #darkmode-text {display: none;}
             @media (width >= 712px) {
                 display: grid;
                 grid-template-columns: auto auto;
                 gap: 1rem;
-                #darkmode__text {display:block; font-weight: 500;}
+                #darkmode-text {display:block; font-weight: 500;}
             }
             input[type="checkbox"] {
                 width: 0;
@@ -249,7 +249,7 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
             .menu {
                 position: relative;
             
-                .select__box {
+                .select-box {
                     z-index: 3;
                     cursor: pointer;
                     position: relative;
@@ -312,7 +312,7 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
             }
         }
 
-        .log__in__btn {
+        .log-in-btn {
             display: none; 
 
             @media (width >= 1344px) {
@@ -334,7 +334,7 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
         }
     }
 
-    .hero__container {
+    .hero-container {
         
         .hero{
             margin: 1rem 0 6rem;
@@ -349,7 +349,7 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
                 row-gap: 1.5rem;
             }
 
-            .hero__item {
+            .hero-item {
                 grid-column: 1/13;
                 display: grid;
                 text-align: center;
@@ -373,19 +373,19 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
                 }
             }
 
-            .hero__text {
+            .hero-text {
                 margin-bottom: 1.5rem;
-                #line__break{display: none;}
+                #line-break{display: none;}
                 @media (width >= 712px) {
                     grid-column: 1/6;
                     grid-row: 3;
                     text-align: start;
-                    #text__wrap{display: none;}
-                    #line__break{display: inline-block;}
+                    #text-wrap{display: none;}
+                    #line-break{display: inline-block;}
                 }
             }
 
-            .hero__image {
+            .hero-image {
                 display: none;
                 @media (width >= 712px) {
                     display: grid;
@@ -402,7 +402,7 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
 
             }
            
-            .download__btns {
+            .download-btns {
                 gap: 1rem;
                 @media (width >= 712px) {
                     grid-column: 1/6;
@@ -415,7 +415,7 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
                     gap: 1.5rem;
                     padding-right: 2rem;
                 }
-                .download__btn {
+                .download-btn {
                     display: grid;
                     place-items: center;
                     height: 3rem;
@@ -434,18 +434,18 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
                 }
                 
             }
-            #btn__dark {
+            #btn-dark {
                 display: none;
             }
         }
     }
     &.dark {
-        .hero__container {
+        .hero-container {
             .hero {
-                #btn__dark {
+                #btn-dark {
                     display: grid;
                 }
-                #btn__light {
+                #btn-light {
                     display: none;
                 }
             }
@@ -476,7 +476,7 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
                 #logo6 {display: grid;}   
             }
 
-            .logo__item {
+            .logo-item {
                 height: 6.25rem;
                 border: solid 1px var(--logo-border-color);
                 border-radius: .5rem;
@@ -485,7 +485,7 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
             }    
         }
 
-        .app__features {
+        .app-features {
             margin: 3rem 0rem;
             row-gap: 2rem;
             @media (width >= 712px) {
@@ -499,7 +499,7 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
                 align-items: start;
             }
 
-            .app__features__phone {
+            .app-features-phone {
                 display: none;
                 @media (width >= 1344px) {
                     display: block;
@@ -511,7 +511,7 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
 
             h2 {font-size: 1.75rem; @media (width >= 712px) {font-size: 2.1rem;} @media (width >= 1344px) {font-size: 2.5rem;}}
 
-            h2, p.L__text {
+            h2, p.L-text {
                 grid-column: 1 / 13;
                 text-align: center;
                 @media (width >= 1344px) {
@@ -536,18 +536,18 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
                     margin-top: 3rem;
                 }
 
-                .features__item {
+                .features-item {
                     display: grid;
                     grid-template-columns: auto 1fr;
                     gap: 1.5rem;
                     h3 {font-size: 1.35rem;}
                 
-                    .features__item__text {
+                    .features-iteM-text {
                         display: grid;
                         grid-template-rows: auto 1fr;
                         gap: .75rem;
                     }
-                    .features__item__icon {
+                    .features-item-icon {
                         height: 3.75rem;
                         width: 3.75rem;
                         background-color: var(--icon-background-color);
@@ -590,7 +590,7 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
         }
        
         /* Alla mobiler och hur de ligger i olika storlekar */
-        .phone__layout {
+        .phone-layout {
             grid-column: 1/-1;
             grid-template-columns: 1fr;
             xborder: 2px solid;
@@ -601,7 +601,7 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
                 justify-content: space-evenly;
             }
             /* Storlek, stack och hur varje mobil ligger i vilken storlek */
-            .phone__image {
+            .phone-image {
                 display: grid;
                 xborder: 2px solid;
                 grid-template-areas: stack;
@@ -680,18 +680,18 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
             }
         }
        
-        #transfer__text__tablet, #transfer__text__desktop, #lorem__2 {display: none;}
+        #transfer-text-tablet, #transfer-text-desktop, #lorem-2 {display: none;}
  
         @media (width >= 712px) {
-            #transfer__text__tablet {display: block;}
-            #transfer__text__mobile {display: none;}
+            #transfer-text-tablet {display: block;}
+            #transfer-text-mobile {display: none;}
         }
         @media (width >= 1344px) {
-            #transfer__text__tablet {display: none;}
-            #transfer__text__mobile {display: none;}
-            #transfer__text__desktop {display: block;}
-            #lorem__1 {display: none;}
-            #lorem__2 {display: block;}
+            #transfer-text-tablet {display: none;}
+            #transfer-text-mobile {display: none;}
+            #transfer-text-desktop {display: block;}
+            #lorem-1 {display: none;}
+            #lorem-2 {display: block;}
         }            
  
  
@@ -836,18 +836,18 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
     .testimonials {
         margin: 5rem 0 7rem;
 
-        .testimonials__headline {
+        .testimonials-headline {
             grid-column: 1/4;
         }
 
-        #testi__1 {
+        #testi-1 {
             grid-column: 5/9;
         }
-        #testi__2 {
+        #testi-2 {
             grid-column: 9/13;
         }
 
-        .testimonial__card {
+        .testimonial-card {
             margin-top: 1.25rem;
             border-radius: .5rem;
             background-color: var(--testi-card-color);
@@ -857,7 +857,7 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
             gap: 1.5rem;
             position: relative;
 
-            .testi__icon {
+            .testi-icon {
                 position: absolute;
                 left: 1.5rem;
                 top: -1.75rem;
@@ -874,21 +874,21 @@ p.S__text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
                 box-shadow: 0 .75rem 1rem -.75rem var(--brand-color);
             }
 
-            .testi__rating {
+            .testi-rating {
                 margin-top: 1.5rem;
             }
 
-            .from__who {
+            .from-who {
                 display: grid;
                 grid-template-columns: auto 1fr;
                 gap: 1rem;
 
-                .name__text {
+                .name-text {
                     font-size: 1rem;
                     font-weight: 700;
                     color: var(--headline-color);
                 }
-                .S__text {
+                .S-text {
                     color: var(--text-color-thin);
                 }
 
