@@ -103,7 +103,7 @@ p.M-text {font-size: 1rem;} /* 16px */
 p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
  
 /* --- GRID-12 SYSTEM --- */
-.grid-12 {
+.grid-12 { /* --- Twelve columns separated by gap size --- */
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(12, minmax(0,1fr));
@@ -117,15 +117,15 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
 }
 
 /* --- RESPONSIVENESS SYSTEM --- */
-.content-container {
+.content-container { /* --- Structure: Container[ Padding | Content | Padding] --- */
     display: flex;
     .content-padding {
-        flex-basis: var(--padding);
-        flex-grow: 1;
+        flex-basis: var(--padding); /* Base padding width */
+        flex-grow: 1; /* Increase to make padding width grow faster, set to 0 to disable padding growth */
     }
     .content {
-        flex-basis: var(--content-width);
-        flex-grow: 1;
+        flex-basis: var(--content-width); /* Base content width */
+        flex-grow: 1; /* Increase to make content width grow faster, set to 0 to disable content growth */
     }
 }
 
@@ -558,7 +558,6 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
     background-color: var(--background-color2);
     /* Styling för hela sidan och hur det ligger i olika storlekar */
     .content {
-        xborder: 2px solid;
         display: grid;
         grid-template-rows: auto auto auto auto;
         margin: 4.5rem 0 4rem;
@@ -570,7 +569,6 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
         h2 {
             font-size: 1.74375rem;
             grid-column: 1/-1;
-            xborder: 2px solid green;
             text-align: center;
             @media (width >= 712px) {
                 font-size: 2.1rem;
@@ -584,7 +582,6 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
         .phone-layout {
             grid-column: 1/-1;
             grid-template-columns: 1fr;
-            xborder: 2px solid;
             display: grid;
             @media (width >= 712px) {
                 grid-column: 1/13;
@@ -594,7 +591,6 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
             /* Storlek, stack och hur varje mobil ligger i vilken storlek */
             .phone-image {
                 display: grid;
-                xborder: 2px solid;
                 grid-template-areas: stack;
                 --w: 270px;
                 @media (width >= 712px) {

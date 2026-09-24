@@ -17,7 +17,6 @@ Namnkonvention: kebab-case |
 
 Kommentarer om projektet:
 
-
 Hero + Header - För att få bakgrunds gradienten att täcka både header och heron så lades både sektioner under samma page-1 wrapper.
 
 App Features - 
@@ -32,5 +31,5 @@ FAQ -
 
 Subscribe + Footer -
 
-
+Darkmode - Valde att sätta dark klassen på varje page istället för på html för att kunna behålla samma nästling struktur och samtidigt kunna byta bilder vid darkmode switch med &.dark selector.
 
