@@ -97,7 +97,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 xh1{font-size: 2.125rem; @media (width >= 712px) {font-size: 2.75rem;} @media (width >= 1344px) {font-size: 3.5rem;}} /* Hero */
 xh2{font-size: 1.75rem; @media (width >= 712px) {font-size: 2.1rem;} @media (width >= 1344px) {font-size: 2.5rem;}} /* App features, HDIW, Testimonials */
-xh2.small {font-size: 2rem;} /* App features page 4 desktop, FAQ tablet och desktop */
+xh2.small {font-size: 2rem;} /* App features page- 4 desktop, FAQ tablet och desktop */
 xh3{font-size: 1.35rem; @media (width >= 712px) {font-size: 1.42rem;} @media (width >= 1344px) {font-size: 1.5rem;}} /* HDIW, FAQ mobile */
 xh4{font-size: 1.25rem;} /* App features */
 xh5{font-size: 1rem; font-weight: 600;} /* FAQ */
@@ -140,7 +140,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
 }
 
 
-.page1 {
+.page-1 {
     background-color: var(--background-color1);
     background-image: var(--gradiant-color);
 
@@ -453,7 +453,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
     }
 }
 
-.page2 {
+.page-2 {
     background: var(--background-color1);
     
     .content {
@@ -562,8 +562,8 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
     }
 }
 
-/* Page 3 sätter background color */
-.page3 {
+/* page- 3 sätter background color */
+.page-3 {
     background-color: var(--background-color2);
     /* Styling för hela sidan och hur det ligger i olika storlekar */
     .content {
@@ -699,7 +699,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
 }
 
 /* --- DESKTOP APP FEATURE --- */
-.pageaf {
+.page-af {
     display: none;
     background-color: var(--background-color1);
     @media (min-width: 1344px) {
@@ -824,7 +824,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
     }
 }
 
-.pageT {
+.page-T {
     background-color: var(--background-color2);
     display: none;
     @media (width >= 1344px) {
@@ -897,7 +897,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
     }
 }
 
-.page4 {
+.page-4 {
     background: var(--background-color1);
 
     .faqSection {
@@ -1042,7 +1042,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
    
 }
 @media (width >= 1344px) {
-    .page4 .faqSection {
+    .page-4 .faqSection {
         display: grid;
         grid-template-columns: repeat(12, minmax(0, 1fr));
         column-gap: 1.5rem;
@@ -1052,21 +1052,21 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
         margin-bottom: 6rem;
     }
 
-    .page4 .faqSection h1 {
+    .page-4 .faqSection h1 {
         grid-column: 1 / 5;
         grid-row: 1;
         margin: 0;
         text-align: left;
     }
 
-    .page4 .faqSection .faqIntro {
+    .page-4 .faqSection .faqIntro {
         grid-column: 1 / 5;
         grid-row: 2;
         margin: 0;
         text-align: left;
     }
 
-    .page4 .faqSection .faqTablet {
+    .page-4 .faqSection .faqTablet {
         grid-column: 1 / 5;
         grid-row: 3;
         display: grid;
@@ -1075,7 +1075,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
         padding: 0;
     }
 
-    .page4 .faqSection .faqList {
+    .page-4 .faqSection .faqList {
         grid-column: 6 / 13;
         grid-row: 1 / 4;
     }
@@ -1083,7 +1083,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ och knappar */
 
 }
 
-.page5 {
+.page-5 {
     background-color: var(--background-color1);
 
     .box {

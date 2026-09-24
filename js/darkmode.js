@@ -2,13 +2,13 @@ console.log('Börja med att sätta ugnen på 175 grader (eller 160 grader om du 
 
 const darkmodeSwitch = document.querySelector('#darkmode-switch')
 const hasDarkmode = localStorage.getItem('darkmode')
-const page1 = document.querySelector('.page1')
-const page2 = document.querySelector('.page2')
-const page3 = document.querySelector('.page3')
-const page4 = document.querySelector('.page4')
-const page5 = document.querySelector('.page5')
-const pageaf = document.querySelector('.pageaf')
-const pageT = document.querySelector('.pageT')
+const page1 = document.querySelector('.page-1')
+const page2 = document.querySelector('.page-2')
+const page3 = document.querySelector('.page-3')
+const page4 = document.querySelector('.page-4')
+const page5 = document.querySelector('.page-5')
+const pageaf = document.querySelector('.page-af')
+const pageT = document.querySelector('.page-T')
 
 if(hasDarkmode == null) {
     if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
