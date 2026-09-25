@@ -19,15 +19,21 @@ Kommentarer om projektet:
 
 Hero + Header - För att få bakgrunds gradienten att täcka både header och heron så lades både sektioner under samma page-1 wrapper.
 
-App Features - 
+App Features -
 
-HDIW - Jag valde att lägga skal på alla telefoner för jag tyckte det såg tomt ut utan skal. Det blev helt enkelt snyggare med skal på varje telefon. 
+HDIW - Jag valde att lägga skal på alla telefoner för jag tyckte det såg tomt ut utan skal. Det blev helt enkelt snyggare med skal på varje telefon.
 
 App Features 2 -
 
 Testimonials -
 
-FAQ -
+FAQ - Daniel
+
+Avikelser från Figma:
+Figma-designen hade olika layouter för mobil, tablet och desktop. Jag valde istället att behålla samma stil från tablet och desktop även på mobil eftersom det såg mycket enhetligare ut. Det fungade bra responsivt utan att förlora någonting.
+
+Avikelser från gruppen:
+Istället för gruppens standard-grid-system byggde jag ett eget 12-kolumners grid-system på desktop. Gjorde detta för extra repitition.
 
 Subscribe + Footer -
 
