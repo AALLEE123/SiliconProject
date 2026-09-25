@@ -24,7 +24,7 @@
     --brand-color: #6366F1; /*knappar, citat-tecken, pilar */
     --button-text-color: #FFFFFF;
     --testi-card-color: #ffffff;
- 
+
     /* --- RESPONSIVENESS SYSTEM VARIABLES--- */
     --padding: 6px;
     --content-width: 348px;
@@ -43,7 +43,7 @@
     --text-color-thin:#9397AD;
     --headline-color: #FFFFFF;
     --background-color1: #0b0f19;
-    --background-color2: #151822;    
+    --background-color2: #151822;
     --gradiant-color: linear-gradient(350deg,rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.06) 42%, rgba(241, 244, 253, 0.07) 83%);
     --logo-border-color: #363443;
     --icon-background-color: #12162a;
@@ -65,13 +65,13 @@ html, body {
     background-color: var(--background-color1);
     font-family: "Manrope", sans-serif;
     font-size: 16px;
-    font-style: normal; 
+    font-style: normal;
 }
 
 a {
     color: var(--text-color);
     text-decoration: none;
-    
+
     &:hover {
         text-decoration: none;
     }
@@ -84,7 +84,7 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 800;
     color: var(--headline-color);
 }
- 
+
 p {
     padding:0;
     margin:0;
@@ -95,7 +95,7 @@ p {
 p.L-text {font-size: 1.125rem;} /* 18px */
 p.M-text {font-size: 1rem;} /* 16px */
 p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
- 
+
 /* --- GRID-12 SYSTEM --- */
 .grid-12 { /* --- Twelve columns separated by gap size --- */
     display: grid;
@@ -103,10 +103,10 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
     grid-template-columns: repeat(12, minmax(0,1fr));
     column-gap: .5rem;
     @media (width >= 712px) {
-        column-gap: 1rem;      
+        column-gap: 1rem;
         }
     @media (width >= 1344px) {
-        column-gap: 1.5rem;   
+        column-gap: 1.5rem;
         }
 }
 
@@ -158,7 +158,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
 
         .nav-bar {
             display: none;
-            @media (width >= 1344px) {      
+            @media (width >= 1344px) {
                 display: grid;
                 grid-template-columns: auto auto auto auto 1fr;
                 gap: 3rem;
@@ -187,10 +187,10 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
                 position: relative;
                 --_w: 46px;
                 --_h: 24px;
-            
+
                 width: var(--_w);
                 height: var(--_h);
-                border-radius: 12px; 
+                border-radius: 12px;
 
                 input[type="checkbox"] {
                     width: 0;
@@ -203,9 +203,9 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
                     inset: 0;
                     cursor: pointer;
                     background-color: var(--text-color-thin);
-                    border-radius: 12px;            
+                    border-radius: 12px;
                     transition: 400ms;
-                    
+
                 }
                 .slider::before{
                     content: "";
@@ -227,12 +227,12 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
 
 
             }
-        } 
-        
+        }
+
         .nav {
             .menu {
                 position: relative;
-            
+
                 .select-box {
                     z-index: 3;
                     cursor: pointer;
@@ -243,7 +243,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
                     width: 2.75rem;
                     height: 2.75rem;
                     border-radius: .5rem .5rem 0 0;
-                    
+
                     #burger {
                         font-size: 1.5rem;
                         color: var(--headline-color);
@@ -258,7 +258,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
                         display: block;
                     }
                 }
-        
+
                 .options {
                     z-index: 2;
                     display: none;
@@ -271,7 +271,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
                     box-shadow: -0px 0px 3px #0000007b;
 
                     .option {
-                        margin: .75rem;  
+                        margin: .75rem;
                         border: 1px solid transparent;
                         border-radius: .5rem;
                         text-align: center;
@@ -297,7 +297,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
         }
 
         .log-in-btn {
-            display: none; 
+            display: none;
 
             @media (width >= 1344px) {
                 display: block;
@@ -313,13 +313,13 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
                     color: var(--button-text-color);
                     p {color: var(--button-text-color);}
                 }
-            
+
             }
         }
     }
 
     .hero-container {
-        
+
         .hero{
             margin: 1rem 0 6rem;
             row-gap: 1rem;
@@ -385,13 +385,13 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
                 }
 
             }
-           
+
             .download-btns {
                 gap: 1rem;
                 @media (width >= 712px) {
                     grid-column: 1/6;
                     grid-row: 4;
-                    grid-template-columns: auto auto;      
+                    grid-template-columns: auto auto;
                 }
                 @media (width >= 1344px) {
                     grid-column: 1/5;
@@ -409,14 +409,14 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
                     @media (width >= 712px) {
                         height: 2.5rem;
                         img {
-                            height: 75%; 
+                            height: 75%;
                         }
                     }
                     @media (width >= 1344px) {
                         height: 3rem;
                     }
                 }
-                
+
             }
             #btn-dark {
                 display: none;
@@ -433,16 +433,16 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
                     display: none;
                 }
             }
-        }   
+        }
     }
 }
 
 /* --- APP FEATURES --- */
 .page-2 {
     background: var(--background-color1);
-    
+
     .content {
-    
+
         .logos {
             display: none;
             @media (width >= 712px) {
@@ -453,12 +453,12 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
                 gap: 1.5rem;
                 #logo5 {display: none;}
                 #logo6 {display: none;}
-            }    
+            }
             @media (width >= 1344px) {
                 margin-top: 6rem;
                 grid-template-columns: repeat(6, 1fr);
                 #logo5 {display: grid;}
-                #logo6 {display: grid;}   
+                #logo6 {display: grid;}
             }
 
             .logo-item {
@@ -467,7 +467,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
                 border-radius: .5rem;
                 display: grid;
                 place-content: center;
-            }    
+            }
         }
 
         .app-features {
@@ -477,9 +477,9 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
                 margin: 4rem 0rem 6rem;
                 row-gap: 1.5rem;
             }
-            @media (width >= 1344px) { 
-                margin: 7rem 0rem 7rem; 
-                row-gap: 1rem; 
+            @media (width >= 1344px) {
+                margin: 7rem 0rem 7rem;
+                row-gap: 1rem;
                 grid-template-rows: auto auto 1fr;
                 align-items: start;
             }
@@ -500,7 +500,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
                 text-align: center;
                 @media (width >= 1344px) {
                     grid-column: 6 / 13;
-                    text-align: start;     
+                    text-align: start;
                 }
             }
 
@@ -510,7 +510,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
                 gap: 2rem;
                 @media (width >= 712px) {
                     grid-template-columns: 1fr 1fr;
-                    grid-template-rows: 1fr 1fr 1fr;    
+                    grid-template-rows: 1fr 1fr 1fr;
                     gap: 2.5rem;
                     margin-top: 1rem;
                 }
@@ -525,7 +525,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
                     grid-template-columns: auto 1fr;
                     gap: 1.5rem;
                     h3 {font-size: 1.35rem;}
-                
+
                     .features-item-text {
                         display: grid;
                         grid-template-rows: auto 1fr;
@@ -557,7 +557,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
         row-gap: 2.5rem;
             @media (width >= 712px) {margin: 5rem 0 4.5rem; row-gap: 3rem;}
             @media (width >= 1344px) {margin: 5rem 0 6rem; row-gap: 3rem;}
-       
+
         /* h2 styling och hur den ligger */
         h2 {
             font-size: 1.74375rem;
@@ -570,7 +570,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
                 font-size: 2.5rem;
             }
         }
-       
+
         /* Alla mobiler och hur de ligger i olika storlekar */
         .phone-layout {
             grid-column: 1/-1;
@@ -594,7 +594,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
                 }
                 img {
                     width: var(--w);
-                    grid-area: stack;  
+                    grid-area: stack;
                 }
             }
             /* Var mobilerna ligger i vilken storlek */
@@ -611,7 +611,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
                     display: grid;
                     grid-column: 3;
                 }
-               
+
             }
             @media  (width >= 1344px) {
                 #budget {
@@ -628,9 +628,9 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
                     display: none;
                 }
             }
-               
+
         }
- 
+
         /* Styling h3,p och media för hur texten ligger i vilken storlek */
         h3 {
             grid-column: 2/12;
@@ -659,9 +659,9 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
                 grid-column: 4/10;
             }
         }
-       
+
         #transfer-text-tablet, #transfer-text-desktop, #lorem-2 {display: none;}
- 
+
         @media (width >= 712px) {
             #transfer-text-tablet {display: block;}
             #transfer-text-mobile {display: none;}
@@ -672,10 +672,10 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
             #transfer-text-desktop {display: block;}
             #lorem-1 {display: none;}
             #lorem-2 {display: block;}
-        }            
- 
- 
-    }  
+        }
+
+
+    }
 }
 
 /* --- DESKTOP APP FEATURES --- */
@@ -684,7 +684,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
     background-color: var(--background-color1);
     @media (min-width: 1344px) {
         display: flex;
-        padding-block: 80px;    
+        padding-block: 80px;
     }
 
 
@@ -712,18 +712,18 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
     }
 
     .feature-row .feature-text {
-        grid-column: span 5;      
+        grid-column: span 5;
     }
 
     .feature-row .feature-visual {
-        grid-column: span 5;     
+        grid-column: span 5;
         display: flex;
         justify-content: flex-start;
     }
 
     .feature-img {
         width: auto;
-        max-width: 85%; 
+        max-width: 85%;
         height: auto;
         display: flex;
     }
@@ -749,7 +749,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        color: var(--text-color);       
+        color: var(--text-color);
     }
 
     .learn-more-btn {
@@ -811,7 +811,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
     @media (width >= 1344px) {
         display: flex;
     }
-    
+
     h2 {font-size: 2.5rem;}
 
     .testimonials {
@@ -832,8 +832,8 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
             margin-top: 1.25rem;
             border-radius: .5rem;
             background-color: var(--testi-card-color);
-            padding: 1.5rem;  
-            display: grid;  
+            padding: 1.5rem;
+            display: grid;
             grid-template-rows: auto 1fr auto;
             gap: 1.5rem;
             position: relative;
@@ -880,188 +880,226 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
 .page-4 {
     background: var(--background-color1);
 
-    .faqSection {
+    .faq-section {
         display: grid;
         align-items: start;
         gap: 1.5rem;
         grid-template-rows: auto auto 1fr;
         margin-bottom: 2.5rem;
-       
-        h1 {
-            margin: 1.5rem 0 0.5rem 0;
-            color: var(--headline-color);
-            font-weight: 800;
-            font-size: 1.6rem;
-            text-align: center;
-        
-        }
-
-        p {
-            color: var(--text-color);
-        }
-
     }
 
-    .faqList {
+    .faq-section h2 {
+        margin: 1.5rem 0 0.5rem;
+        color: var(--headline-color);
+        font-size: 1.75rem;
+        font-weight: 800;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    .faq-section p {
+        color: var(--text-color);
+    }
+
+    .faq-list {
         display: grid;
         gap: 1rem;
     }
 
-    details summary {
+    .faq-list details summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
         list-style: none;
         cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
     }
 
-    .faqQuestion {
-        font-weight: 600;
-        color: var(--headline-color);
+    .faq-list details summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .faq-question {
         padding-top: 0.25rem;
-
+        color: var(--headline-color);
+        font-size: 1rem;
+        font-weight: 600;
     }
 
-    details summary::after {
+    .faq-list details summary::after {
         content: '';
         width: 2.5em;
         height: 2.5em;
+        flex-shrink: 0;
+        border-radius: 50%;
         background: url('/images/FAQ/whiteArrow.svg') no-repeat center;
         background-size: contain;
-        border-radius: 50%;
-        flex-shrink: 0;
-
     }
 
-    details[open] summary::after {
-        background: url('/images/FAQ/blueArrow.svg') no-repeat center;
-        background-size: contain;
+    .faq-list details[open] summary::after {
+        background-image: url('/images/FAQ/blueArrow.svg');
     }
 
-    &.dark details:not([open]) summary::after {
-        background: url('/images/FAQ/darkArrow.svg') no-repeat center; /* Byter till mörk pil i dark mode */
+    &.dark .faq-list details:not([open]) summary::after {
+        background-image: url('/images/FAQ/darkArrow.svg');
     }
 
-    .faqIntro {
+    .faq-intro {
         text-align: center;
     }
 
-    details[open]{
+    .faq-item {
+        padding: 1.25rem;
+        border-radius: 12px;
+        background: var(--faq-background-color);
+        box-shadow: var(--faq-box-shadow);
+    }
+
+    .faq-item[open] {
         border: 1px solid var(--faq-border-color);
     }
 
-    .faqItem {
-        padding: 1.25rem;
-        box-shadow: var(--faq-box-shadow);
-        background: var(--faq-background-color);
-        border-radius: 12px;
-        
-    }
-
-    .faqAnswer {
+    .faq-answer {
         margin-top: 1rem;
-        line-height: 1.6;
         color: var(--text-color);
+        line-height: 1.6;
     }
 
-    .faqTablet {
+    .faq-tablet {
         display: none;
+    }
 
-        @media (width >=712px) {
+    .call-us,
+    .text-us {
+        display: flex;
+        min-height: 9rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        padding: 1rem;
+        border: 1px solid var(--faq-border-color);
+        border-radius: 0.5rem;
+    }
+
+    .call-us img,
+    .text-us img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .call-us p,
+    .text-us p {
+        color: var(--text-color);
+        font-size: 0.75rem;
+        line-height: 1.5;
+    }
+
+    .call-us a,
+    .text-us a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .call-us a {
+        color: #6366F1;
+    }
+
+    .text-us a {
+        color: #22C55E;
+    }
+
+    .contact-button {
+        display: none;
+        justify-content: center;
+    }
+
+    .contact-link {
+        display: flex;
+        width: 9rem;
+        height: 3rem;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+        background-color: var(--brand-color);
+        color: #FFFFFF;
+    }
+
+    /* Mobil: under 712px */
+    @media (width < 712px) {
+        .contact-button {
+            display: flex;
+        }
+    }
+
+    /* Surfplatta: från 712px */
+    @media (width >= 712px) {
+        .faq-section {
+            margin-bottom: 4rem;
+        }
+
+        .faq-section h2 {
+            font-size: 2.1rem;
+        }
+
+        .faq-question {
+            font-size: 1rem;
+        }
+
+        .faq-tablet {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
         }
 
-        .callUs, .textUs {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
+    }
+
+    /* Dator: från 1344px */
+    @media (width >= 1344px) {
+        .faq-section {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            column-gap: 1.5rem;
+            row-gap: 1rem;
+            padding: 3rem;
+            margin-top: 6rem;
+            margin-bottom: 6rem;
+        }
+
+        .faq-section h2 {
+            grid-column: 1 / 5;
+            grid-row: 1;
+            margin: 0;
+            font-size: 2.5rem;
+            text-align: left;
+        }
+
+        .faq-section .faq-intro {
+            grid-column: 1 / 5;
+            grid-row: 2;
+            margin: 0;
+            text-align: left;
+        }
+
+        .faq-section .faq-tablet {
+            grid-column: 1 / 5;
+            grid-row: 3;
+            grid-template-columns: 1fr 1fr;
             gap: 1rem;
-            border: 1px solid var(--faq-border-color);
-            border-radius: 12px;
-            padding: 1.5rem 1.3rem; /* höger-vänster bredare för att fixa text*/
-            font-size: 14px;
+            padding: 0;
         }
 
-        .callUs a {
-            color: #6366F1;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .textUs a {
-            color: #22C55E;
-            text-decoration: none;
-            font-weight: 600px;
+        .faq-section .faq-list {
+            grid-column: 6 / 13;
+            grid-row: 1 / 4;
         }
 
     }
-
-    .contactButton {
-        display: none;
-
-        @media (width < 712px) {
-            display: flex;
-            justify-content: center;
-
-            .contactLink {
-                display: flex;
-                justify-content: center;
-                background-color: var(--brand-color);
-                color: #FFFFFF;
-                width: 9rem;
-                height: 3rem;
-                border-radius: 0.5rem;
-                align-items: center;
-                
-            }
-        }
-    }
-   
 }
-@media (width >= 1344px) {
-    .page-4 .faqSection {
-        display: grid;
-        grid-template-columns: repeat(12, minmax(0, 1fr));
-        column-gap: 1.5rem;
-        row-gap: 1rem;
-        padding: 3rem;
-        margin-top: 6rem;
-        margin-bottom: 6rem;
-    }
 
-    .page-4 .faqSection h1 {
-        grid-column: 1 / 5;
-        grid-row: 1;
-        margin: 0;
-        text-align: left;
-    }
-
-    .page-4 .faqSection .faqIntro {
-        grid-column: 1 / 5;
-        grid-row: 2;
-        margin: 0;
-        text-align: left;
-    }
-
-    .page-4 .faqSection .faqTablet {
-        grid-column: 1 / 5;
-        grid-row: 3;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        padding: 0;
-    }
-
-    .page-4 .faqSection .faqList {
-        grid-column: 6 / 13;
-        grid-row: 1 / 4;
-    }
-
-
-}
 
 /* --- SUBSCRIBE + FOOTER --- */
 .page-5 {
@@ -1081,7 +1119,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            min-height: 223.1px; 
+            min-height: 223.1px;
         }
     }
 
@@ -1090,7 +1128,7 @@ p.S-text {font-size: 0.875;} /* 14px Footer, FAQ and buttons */
         align-items: center;
         gap: 16px;
         @media (min-width: 712px) {
-            flex-shrink: 0; 
+            flex-shrink: 0;
         }
     }
 
